@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./client/src/assets/img/jesse.png":
+/*!*****************************************!*\
+  !*** ./client/src/assets/img/jesse.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3000f76dec9e26d62c87.png\";\n\n//# sourceURL=webpack://jesseportfolio/./client/src/assets/img/jesse.png?");
+
+/***/ }),
+
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -106,7 +116,37 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst App = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"I AM AN APP\"));\n};\n\n\n//# sourceURL=webpack://jesseportfolio/./client/src/App.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Header */ \"./client/src/components/Header.tsx\");\n/* harmony import */ var _components_AboutMe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/AboutMe */ \"./client/src/components/AboutMe.tsx\");\n/* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Projects */ \"./client/src/components/Projects.tsx\");\n\n\n\n\nconst App = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__.Header, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_AboutMe__WEBPACK_IMPORTED_MODULE_2__.AboutMe, null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Projects__WEBPACK_IMPORTED_MODULE_3__.Projects, null)));\n};\n\n\n//# sourceURL=webpack://jesseportfolio/./client/src/App.tsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/AboutMe.tsx":
+/*!*******************************************!*\
+  !*** ./client/src/components/AboutMe.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"AboutMe\": () => (/* binding */ AboutMe)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _assets_img_jesse_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/img/jesse.png */ \"./client/src/assets/img/jesse.png\");\n\n\nconst AboutMe = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'aboutMeContainer' },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { src: _assets_img_jesse_png__WEBPACK_IMPORTED_MODULE_1__, className: 'portrait' }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'introContainer' },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h3\", null, \"Hi there! I'm\"),\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h3\", null, \"Jesse Smith\"),\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h3\", null, \"FULL-STACK WEB DEVELOPER\")),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'portraitBar' }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'aboutMeTextContainer' },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"))));\n};\n\n\n//# sourceURL=webpack://jesseportfolio/./client/src/components/AboutMe.tsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/Header.tsx":
+/*!******************************************!*\
+  !*** ./client/src/components/Header.tsx ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Header\": () => (/* binding */ Header)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst Header = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"header\", null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", null, \"ABOUT\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", null, \"PROJECTS\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", null, \"TECHNOLOGIES\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", null, \"CONTACT\")));\n};\n\n\n//# sourceURL=webpack://jesseportfolio/./client/src/components/Header.tsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/Projects.tsx":
+/*!********************************************!*\
+  !*** ./client/src/components/Projects.tsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Projects\": () => (/* binding */ Projects)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nconst Projects = () => {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'projectsSection' },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h2\", null, \"PERSONAL PROJECTS\"),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: 'projectsContainer' },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { className: 'projectGif1' }),\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { className: 'projectGif2' }),\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { className: 'projectGif3' }))));\n};\n\n\n//# sourceURL=webpack://jesseportfolio/./client/src/components/Projects.tsx?");
 
 /***/ }),
 
@@ -159,6 +199,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -173,6 +225,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

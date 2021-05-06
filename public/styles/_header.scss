@@ -1,0 +1,17 @@
+@import "./variables";
+
+header {
+  background-color: $oliveBlack;
+  height: 7%;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  h2 {
+    color: white;
+    min-width: 150px;
+    all: unset;
+  }
+}

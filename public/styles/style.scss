@@ -1,0 +1,14 @@
+@import "./header";
+@import "./variables";
+@import "./aboutMe";
+@import "./projects";
+
+body {
+  // background-color: blue;
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
