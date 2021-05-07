@@ -1,16 +1,8 @@
 import * as React from 'react';
-import img from '../assets/img/jesse.png';
 
 export const AboutMe: React.FC = () => {
   return (
-    <div className='aboutMeContainer'>
-      <img src={img} className='portrait'></img>
-      <div className='introContainer'>
-        <h3>Hi there! I'm</h3>
-        <h3>Jesse Smith</h3>
-        <h3>FULL-STACK WEB DEVELOPER</h3>
-      </div>
-      <div className='portraitBar'></div>
+    <div className="aboutMeSection">
       <div className='aboutMeTextContainer'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
