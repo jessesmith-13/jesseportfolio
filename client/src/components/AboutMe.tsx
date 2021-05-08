@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { StickyContainer } from 'react-sticky';
 
 export const AboutMe: React.FC = () => {
   return (
-    <div className="aboutMeSection">
+    <StickyContainer id='about' className="container aboutMeSection">
       <div className='aboutMeTextContainer'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -14,6 +15,6 @@ export const AboutMe: React.FC = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-    </div>
+    </StickyContainer>
   )
 }

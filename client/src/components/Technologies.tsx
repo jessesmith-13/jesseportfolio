@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const Technologies: React.FC = () => {
   return (
-    <div className='technologiesSection'>
+    <div id='technologies' className='container technologiesSection'>
       <h2>TECHNOLOGIES</h2>
       <div className='technologiesContainer'>
         <div className="column column1">

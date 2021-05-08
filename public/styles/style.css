@@ -11,7 +11,7 @@ header {
   z-index: 1000;
 }
 
-header h1 {
+header .h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -19,12 +19,17 @@ header h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  font-size: 2em;
   font-family: "Open Sans Condensed", sans-serif;
   color: white;
 }
 
-header h1:hover {
+header .h1:hover {
   cursor: pointer;
+  color: #007da750;
+}
+
+header .active {
   color: #007da750;
 }
 
@@ -40,7 +45,7 @@ header .sections {
           align-items: center;
 }
 
-header .sections h2 {
+header .sections .h2 {
   all: unset;
   margin-right: 20px;
   font-size: 1.25em;
@@ -48,8 +53,12 @@ header .sections h2 {
   color: white;
 }
 
-header .sections h2:hover {
+header .sections .h2:hover {
   cursor: pointer;
+  color: #007da750;
+}
+
+header .sections .active {
   color: #007da750;
 }
 
@@ -292,12 +301,12 @@ div.contactSection .contactContainer {
           align-items: center;
 }
 
-div.aboutMeSection {
+.aboutMeSection {
   height: 100vh;
   background-color: white;
 }
 
-div.aboutMeSection .aboutMeTextContainer {
+.aboutMeSection .aboutMeTextContainer {
   background-color: #007da750;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
@@ -305,6 +314,17 @@ div.aboutMeSection .aboutMeTextContainer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+}
+
+.mainContainer {
+  max-height: 100vh;
+  overflow: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.container {
+  scroll-snap-align: center;
 }
 
 body {

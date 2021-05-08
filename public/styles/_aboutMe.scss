@@ -1,6 +1,6 @@
 @import "./variables";
 
-div.aboutMeSection {
+.aboutMeSection {
   @include section(white);
   .aboutMeTextContainer {
     background-color: $cgBlue;
