@@ -1,14 +1,14 @@
 @import "./variables";
 
 .mainContainer {
-  max-height: 100vh - 70px;
+  height: 100vh;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 .container {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 body {

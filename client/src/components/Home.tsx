@@ -3,11 +3,11 @@ import img from '../assets/img/jesse.png';
 // import { AiOutlineTwitter } from 'react-icons/fa';
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FcDocument } from "react-icons/fc";
-import { StickyContainer } from 'react-sticky';
+// import { StickyContainer } from 'react-sticky';
 
 export const Home: React.FC = () => {
   return (
-    <StickyContainer id='home' className='container homeContainer'>
+    <div id='home' className='container homeContainer'>
       <img src={img} className='portrait'></img>
       <div className="iconContainer">
         <AiOutlineTwitter size={30}/>
@@ -22,6 +22,6 @@ export const Home: React.FC = () => {
       <div className='portraitBar'>
         <h3>FULL-STACK WEB DEVELOPER</h3>
       </div>
-    </StickyContainer>
+    </div>
   )
 }

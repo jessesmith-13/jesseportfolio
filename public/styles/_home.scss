@@ -15,8 +15,10 @@ img.portrait {
 }
 
 .homeContainer {
+  padding-top: 8vh;
   @include section(white);
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 4fr;
   grid-template-rows: repeat(4, 1fr);
   .iconContainer {
@@ -37,10 +39,10 @@ div {
     background-color: $cgBlue;
     // opacity: 40%;
     position: absolute;
-    top: 53.25%;
+    top: 47.65%;
     left: 35%;
     height: 10%;
-    width: 100vw;
+    width: 65vw;
     display: flex;
     align-items: center;
     h3 {

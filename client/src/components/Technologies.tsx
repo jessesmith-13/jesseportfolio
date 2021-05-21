@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import { StickyContainer } from 'react-sticky';
 
 export const Technologies: React.FC = () => {
   return (
