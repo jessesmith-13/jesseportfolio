@@ -5,6 +5,7 @@ export const AboutMe: React.FC = () => {
   return (
     <div id='about' className="container aboutMeSection">
       <div className='aboutMeTextContainer'>
+        <h2 style={{alignSelf: 'flex-start'}}>ABOUT ME</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

@@ -1,4 +1,5 @@
 @import "./variables";
+// @use "./_aboutMe.scss" as s;
 
 div.contactSection {
   @include section($oliveBlack);
@@ -7,6 +8,8 @@ div.contactSection {
   align-items: center;
   justify-content: center;
   .contactContainer {
+    // @include s.shadow;
+    box-shadow: 5px 5px 20px black;
     background-color: white;
     width: 70%;
     height: 55%;

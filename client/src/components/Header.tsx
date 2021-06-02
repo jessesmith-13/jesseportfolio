@@ -6,20 +6,22 @@ import { useState } from 'react';
 export const Header: React.FC = () => {
   const [activeClass, setActiveClass] = useState('home');
 
-  const handleClick = (section: String) => {
-    document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+  const handleClick = (section: any) => {
+    document.getElementById(section)!.scrollIntoView({ behavior: "smooth" });
     setActiveClass(section);
+    console.log(section);
   }
 
-  const handleClass = (section: String) => {
+  const handleActiveClass = (section: String) => {
     if (section === activeClass) {
       return 'active';
     }
+    return undefined;
   }
 
   return (
     <StickyContainer className='navbar'>
-      <h1 className={handleClass('home')} onClick={() => handleClick('home')}>JS</h1>
+      <h1 className={handleActiveClass('home')} onClick={() => handleClick('home')}>JS</h1>
       {/* <Link 
           className='h1'
           activeClass="active"
@@ -76,10 +78,10 @@ export const Header: React.FC = () => {
           duration={500}
           >CONTACT
         </Link> */}
-        <h2 className={handleClass('about')} onClick={() => handleClick('about')}>ABOUT</h2>
-        <h2 className={handleClass('projects')} onClick={() => handleClick('projects')}>PROJECTS</h2>
-        <h2 className={handleClass('technologies')} onClick={() => handleClick('technologies')}>TECHNOLOGIES</h2>
-        <h2 className={handleClass('contact')} onClick={() => handleClick('contact')}>CONTACT</h2>
+        <h2 className={handleActiveClass('about')} onClick={() => handleClick('about')}>ABOUT</h2>
+        <h2 className={handleActiveClass('projects')} onClick={() => handleClick('projects')}>PROJECTS</h2>
+        <h2 className={handleActiveClass('technologies')} onClick={() => handleClick('technologies')}>TECHNOLOGIES</h2>
+        <h2 className={handleActiveClass('contact')} onClick={() => handleClick('contact')}>CONTACT</h2>
       </div>
     </StickyContainer>
   )

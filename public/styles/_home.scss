@@ -12,6 +12,7 @@ img.portrait {
   border-radius: 50%;
   grid-column: 2;
   grid-row: 2/3;
+  box-shadow: 5px 5px 20px $grullo;
 }
 
 .homeContainer {
@@ -40,9 +41,9 @@ div {
     // opacity: 40%;
     position: absolute;
     top: 47.65%;
-    left: 35%;
+    left: 30%;
     height: 10%;
-    width: 65vw;
+    width: 75vw;
     display: flex;
     align-items: center;
     h3 {
