@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/jessesmith-13/jesseportfolio#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "@types/react": "^17.0.3",
     "@types/react-bootstrap": "^0.32.25",
     "@types/react-dom": "^17.0.3",
@@ -28,6 +30,7 @@
     "bootstrap": "^3.4.1",
     "css-loader": "^5.2.4",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
     "morgan": "^1.10.0",
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7",
@@ -35,12 +38,14 @@
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-material-ui-carousel": "^2.2.6",
     "react-scroll": "^1.8.2",
     "react-sticky": "^6.0.3",
     "react-use-scroll-snap": "0.0.3",
     "sass": "^1.34.1",
     "style-loader": "^2.0.0",
     "ts-loader": "^9.0.2",
+    "url-loader": "^4.1.1",
     "webpack": "^5.34.0",
     "webpack-cli": "^4.6.0"
   }

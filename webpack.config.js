@@ -7,6 +7,13 @@ module.exports = {
   },
   module: {
     rules: [
+      // { test: /\.woff(\?.+)?$/, use: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      // { test: /\.woff2(\?.+)?$/, use: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      // { test: /\.ttf(\?.+)?$/, use: 'file-loader' },
+      // { test: /\.eot(\?.+)?$/, use: 'file-loader' },
+      // { test: /\.svg(\?.+)?$/, use: 'file-loader' },
+      // { test: /\.png$/, use: 'url-loader?mimetype=image/png' },
+      // { test: /\.gif$/, use: 'url-loader?mimetype=image/gif' },
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
@@ -28,7 +35,7 @@ module.exports = {
           },
         ],
       }
-    ]
+    ],
   },
   mode: 'development',
   resolve: {

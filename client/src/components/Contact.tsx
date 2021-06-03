@@ -13,10 +13,9 @@ export const Contact: React.FC = () => {
       <div className="contactContainer">
         <h2 className="contactHeading">CONTACT</h2>
         <div className="iconContainer">
-          <HiOutlineMail className='contactIcon emailIcon' size={75} />
+          <button><HiOutlineMail className='contactIcon emailIcon' size={75} /></button>
           <AiFillLinkedin className='contactIcon linkedInIcon' size={75} />
           <AiFillGithub className='contactIcon githubIcon' size={75} />
-          
         </div>
       </div>
     </div>

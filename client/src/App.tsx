@@ -5,6 +5,7 @@ import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
 import { Technologies } from './components/Technologies';
 import { Contact } from './components/Contact';
+// import { Button } from 'react-bootstrap';
 
 
 export const App: React.FC = () => {
