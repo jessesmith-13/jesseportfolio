@@ -3,6 +3,7 @@ import img from '../assets/img/jesse.png';
 // import { AiOutlineTwitter } from 'react-icons/fa';
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FcDocument } from "react-icons/fc";
+
 // import { StickyContainer } from 'react-sticky';
 
 export const Home: React.FC = () => {

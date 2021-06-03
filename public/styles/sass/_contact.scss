@@ -8,6 +8,9 @@ div.contactSection {
   align-items: center;
   justify-content: center;
   .contactContainer {
+    .contactHeading {
+      margin-top: 5%;
+    }
     // @include s.shadow;
     box-shadow: 5px 5px 20px black;
     background-color: white;
@@ -17,5 +20,19 @@ div.contactSection {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .iconContainer {
+      // justify-self: center;
+      height: 100%;
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 5%;
+      .contactIcon {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

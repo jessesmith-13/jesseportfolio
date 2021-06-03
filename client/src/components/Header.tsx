@@ -1,7 +1,7 @@
 import * as React from 'react';
-// import { Link } from 'react-scroll';
 import { StickyContainer } from 'react-sticky';
 import { useState } from 'react';
+
 
 export const Header: React.FC = () => {
   const [activeClass, setActiveClass] = useState('home');

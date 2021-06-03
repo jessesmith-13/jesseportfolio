@@ -19,17 +19,33 @@ div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    .projectImage {
+    .projectImageContainer {
       background-color: white;
       height: 100%;
+      max-height: 30vh;
       width: 100%;
       &:hover {
         cursor: pointer;
       }
+      .project1Image {
+        height: 100%;
+        width: 100%;
+      }
+      .project2Image {
+        height: 100%;
+        width: 30%;
+      }
     }
-    .project1Image {
+    .project1ImageContainer {
       grid-column: 1/2;
       grid-row: 1/2;
+    }
+
+    .project2ImageContainer {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
     }
 
     .project1Description {
