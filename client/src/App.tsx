@@ -12,8 +12,8 @@ export const App: React.FC = () => {
 
   return (
     <>
+      <Header />
       <div className='mainContainer'>
-        <Header />
         <Home />
         <AboutMe />
         <Projects />
