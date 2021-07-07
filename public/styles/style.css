@@ -130,16 +130,13 @@ div .projectsContainer .projectImageContainer .project1Image {
 }
 div .projectsContainer .projectImageContainer .project2Image {
   height: 100%;
-  width: 30%;
+  width: 50%;
 }
 div .projectsContainer .project1ImageContainer {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 div .projectsContainer .project2ImageContainer {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: black;
 }
 div .projectsContainer .project1Description {
@@ -159,16 +156,15 @@ div .projectsContainer .rightSideDescription {
   flex-direction: column;
   align-items: flex-end;
   padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 div .projectsContainer .leftSideDescription {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5%;
-}
-div .projectsContainer .project2Image {
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 div .projectsContainer .project3Image {
   grid-column: 1/2;

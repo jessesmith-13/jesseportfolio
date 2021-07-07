@@ -23,7 +23,7 @@ export const Projects: React.FC = () => {
             Smove
           </h3>
           <p>
-            Smove is a one-stop-platform for users to manage their move with ease!
+            A one-stop-platform for users to manage their move with ease!
             Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
           </p>
         </div>
@@ -46,11 +46,10 @@ export const Projects: React.FC = () => {
         </div>
         <div className='project3Description rightSideDescription'>
           <h3>
-            Smove
+            Wallace Corporation
           </h3>
           <p>
-            Smove is a one-stop-platform for users to manage their move with ease!
-            Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
+            An e-commerce platform that allows users the ability to cycle through products, see reviews and ratings, questions and answers about a specific product.
           </p>
         </div>
       </div>
