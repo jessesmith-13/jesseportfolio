@@ -48,54 +48,40 @@ img.portrait {
   width: 300px;
   z-index: 1;
   border-radius: 50%;
-  grid-column: 2;
-  grid-row: 2/3;
   box-shadow: 5px 5px 20px #aba194;
+  transition: all 0.2s ease-in-out;
+}
+img.portrait:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .homeContainer {
-  padding-top: 8vh;
   height: 100vh;
   background-color: white;
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr 1fr 4fr;
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .introText {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3em;
+}
+.homeContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-around;
 }
 .homeContainer .iconContainer {
-  width: 100%;
-  grid-row: 3/4;
-  grid-column: 2/3;
+  width: 20vw;
   display: flex;
   justify-content: space-around;
   margin-top: 2%;
 }
 .homeContainer .iconContainer .icon {
   size: 200;
-}
-
-div .portraitBar {
-  background-color: #007da750;
-  position: absolute;
-  top: 47.65%;
-  left: 30%;
-  height: 10%;
-  width: 75vw;
-  display: flex;
-  align-items: center;
-}
-div .portraitBar h3 {
-  color: white;
-  margin-left: 10%;
-}
-div .introContainer {
-  grid-row: 2/3;
-  grid-column: 3/4;
-  align-self: center;
-  margin: 0 0 2% 2%;
-}
-div .introContainer .introText {
-  font-weight: lighter;
 }
 
 div .projectsSection {
@@ -258,8 +244,6 @@ div.contactSection .contactContainer .iconContainer .contactIcon:hover {
   box-shadow: 5px 5px 20px #aba194;
   border-radius: 10px;
   background-color: #007da750;
-  grid-row: 4/5;
-  grid-column: 1/4;
 }
 
 .mainContainer {
