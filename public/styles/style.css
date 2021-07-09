@@ -240,7 +240,6 @@ div.contactSection .contactContainer .iconContainer .contactIcon:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   box-shadow: 5px 5px 20px #aba194;
   border-radius: 10px;
   background-color: #007da750;
