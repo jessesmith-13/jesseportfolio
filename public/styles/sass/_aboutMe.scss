@@ -17,7 +17,8 @@
   .aboutMeTextContainer {
     padding: 2em;
     height: 50vh;
-    width: 50vw;
+    width: 40vw;
+    min-width: 400px;
     // @include center;
     display: flex;
     flex-direction: column;

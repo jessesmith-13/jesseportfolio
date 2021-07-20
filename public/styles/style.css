@@ -53,7 +53,7 @@ img.portrait {
 }
 img.portrait:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.025);
 }
 
 .homeContainer {
@@ -116,7 +116,7 @@ div .projectsContainer .projectImageContainer .project1Image {
 }
 div .projectsContainer .projectImageContainer .project2Image {
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 div .projectsContainer .project1ImageContainer {
   grid-column: 1/2;
@@ -236,7 +236,8 @@ div.contactSection .contactContainer .iconContainer .contactIcon:hover {
 .aboutMeSection .aboutMeTextContainer {
   padding: 2em;
   height: 50vh;
-  width: 50vw;
+  width: 40vw;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

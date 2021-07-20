@@ -13,9 +13,15 @@ export const Contact: React.FC = () => {
       <div className="contactContainer">
         <h2 className="contactHeading">CONTACT</h2>
         <div className="iconContainer">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jesselsmith713@gmail.com" target="_blank"><HiOutlineMail className='contactIcon emailIcon' size={75} /></a>
-          <AiFillLinkedin className='contactIcon linkedInIcon' size={75} />
-          <AiFillGithub className='contactIcon githubIcon' size={75} />
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jesselsmith713@gmail.com" target="_blank">
+            <HiOutlineMail className='contactIcon emailIcon' size={75} />
+          </a>
+          <a href="https://www.linkedin.com/in/jesselsmith713/" target="_blank">
+            <AiFillLinkedin className='contactIcon linkedInIcon' size={75} />
+          </a>
+          <a href="https://github.com/jessesmith-13" target="_blank">
+            <AiFillGithub className='contactIcon githubIcon' size={75} />
+          </a>
         </div>
       </div>
     </div>

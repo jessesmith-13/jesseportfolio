@@ -1,12 +1,13 @@
 import * as React from 'react';
 import smoveLandingPage from '../assets/img/smove.png';
-import landingScreen from '../assets/img/landingScreen.png';
-import listViewScreen from '../assets/img/listViewScreen.png';
-import profileScreen from '../assets/img/profileScreen.png';
+// import landingScreen from '../assets/img/landingScreen.png';
+// import listViewScreen from '../assets/img/listViewScreen.png';
+// import profileScreen from '../assets/img/profileScreen.png';
 import smoveTaskList from '../assets/img/smoveTaskList.png';
 import smoveMovingServices from '../assets/img/smoveMovingServices.png';
 // import { StickyContainer } from 'react-sticky';
 import Carousel from 'react-material-ui-carousel'
+import flixgrubGif from '../../../public/flixgrub.gif';
 
 export const Projects: React.FC = () => {
   return (
@@ -27,11 +28,14 @@ export const Projects: React.FC = () => {
             Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
           </p>
         </div>
-        <Carousel className='projectImageContainer project2ImageContainer'>
+        {/* <Carousel className='projectImageContainer project2ImageContainer'>
           <img className='projectImage project2Image' src={landingScreen} ></img>
           <img className='projectImage project2Image' src={listViewScreen} ></img>
           <img className='projectImage project2Image' src={profileScreen} ></img>
-        </Carousel>
+        </Carousel> */}
+        <div className="projectImageContainer project2ImageContainer">
+          <img className='projectImage project2Image' src={flixgrubGif} alt="flixgrub" />
+        </div>
         <div className='project2Description leftSideDescription'>
           <h3>
             FlixGrub

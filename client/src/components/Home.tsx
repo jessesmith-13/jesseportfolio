@@ -7,15 +7,17 @@ import { FcDocument } from "react-icons/fc";
 // import { StickyContainer } from 'react-sticky';
 
 export const Home: React.FC = () => {
+  let audio = new Audio('/sample.mp3')
+
   const createRipple = () => {
-    console.log('hi');
+    audio.play();
   }
 
   return (
     <div id='home' className='container homeContainer'>
       {/* <div className='portraitContainer'> */}
       <div style={{display: 'flex'}}>
-        <h3 className='introText' style={{marginRight: '2em'}}>Hi there!  </h3>
+        <h3 className='introText'>Hi there!&nbsp;&nbsp;</h3>
         <h3 className='introText'>I'm Jesse Smith</h3>
       </div>
         <img src={img} className='portrait'  onClick={createRipple}></img>
