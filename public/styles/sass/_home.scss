@@ -2,6 +2,7 @@
 
 @mixin section($color) {
   height: 100vh;
+  border: solid black 1px;
   background-color: $color;
 }
 
@@ -20,19 +21,30 @@ img.portrait {
   }
 }
 
+.heading {
+  font-family: $heading;
+}
+
 .homeContainer {
   @include section(white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  // background-image: url("/stars.jpg");
   // display: grid;
   // position: relative;
   // grid-template-columns: 1fr 1fr 4fr;
   // grid-template-rows: repeat(4, 1fr);
   .introText {
-    font-family: $mainText;
+    font-family: $heading;
     font-size: 3em;
+    font-weight: 300;
+  }
+  .introText2 {
+    font-family: $mainText;
+    font-size: 1.5em;
   }
   .portraitContainer {
     display: flex;
@@ -47,12 +59,20 @@ img.portrait {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-    .icon {
-      size: 200;
-    }
   }
 }
 
+.icon {
+  size: 200;
+  &:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
+
+.bodyText {
+  font-family: $mainText;
+}
 @media (min-width: 900px) {
 }
 

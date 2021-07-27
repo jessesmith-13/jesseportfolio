@@ -4,7 +4,7 @@ import * as React from 'react';
 export const Technologies: React.FC = () => {
   return (
     <div id='technologies' className='container technologiesSection'>
-      <h2>TECHNOLOGIES</h2>
+      <h2 className='heading'>TECHNOLOGIES</h2>
       <div className='technologiesContainer'>
         <div className="column column1">
           <h3>Front End</h3>

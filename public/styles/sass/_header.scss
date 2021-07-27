@@ -1,7 +1,7 @@
 @import "./variables";
 
 @mixin headerText {
-  font-family: $heading;
+  font-family: $mainText;
   color: white;
   &:hover {
     cursor: pointer;

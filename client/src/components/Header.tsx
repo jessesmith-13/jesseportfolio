@@ -78,10 +78,10 @@ export const Header: React.FC = () => {
           duration={500}
           >CONTACT
         </Link> */}
-        <h2 className={handleActiveClass('about')} onClick={() => handleClick('about')}>ABOUT</h2>
-        <h2 className={handleActiveClass('projects')} onClick={() => handleClick('projects')}>PROJECTS</h2>
-        <h2 className={handleActiveClass('technologies')} onClick={() => handleClick('technologies')}>TECHNOLOGIES</h2>
-        <h2 className={handleActiveClass('contact')} onClick={() => handleClick('contact')}>CONTACT</h2>
+        <h2 className={handleActiveClass('about')} onClick={() => handleClick('about')}>About</h2>
+        <h2 className={handleActiveClass('projects')} onClick={() => handleClick('projects')}>Projects</h2>
+        <h2 className={handleActiveClass('technologies')} onClick={() => handleClick('technologies')}>Technologies</h2>
+        <h2 className={handleActiveClass('contact')} onClick={() => handleClick('contact')}>Contact</h2>
       </div>
     </StickyContainer>
   )

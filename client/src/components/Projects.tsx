@@ -12,7 +12,7 @@ import flixgrubGif from '../../../public/flixgrub.gif';
 export const Projects: React.FC = () => {
   return (
     <div id='projects' className='container projectsSection'>
-      <h2 className='projectsHeading'>PERSONAL PROJECTS</h2>
+      <h2 className='heading projectsHeading'>PERSONAL PROJECTS</h2>
       <div className='projectsContainer'>
         <Carousel className='projectImageContainer project1ImageContainer'>
           <img className='projectImage project1Image' src={smoveLandingPage}></img>
@@ -20,10 +20,10 @@ export const Projects: React.FC = () => {
           <img className='projectImage project1Image' src={smoveMovingServices}></img>
         </Carousel>
         <div className='project1Description rightSideDescription'>
-          <h3>
+          <h3 className='heading'>
             Smove
           </h3>
-          <p>
+          <p className='bodyText projectText'>
             A one-stop-platform for users to manage their move with ease!
             Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
           </p>
@@ -37,10 +37,10 @@ export const Projects: React.FC = () => {
           <img className='projectImage project2Image' src={flixgrubGif} alt="flixgrub" />
         </div>
         <div className='project2Description leftSideDescription'>
-          <h3>
+          <h3 className='heading'>
             FlixGrub
           </h3>
-          <p>
+          <p className='bodyText projectText'>
             Smove is a one-stop-platform for users to manage their move with ease!
             Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
           </p>
@@ -49,10 +49,10 @@ export const Projects: React.FC = () => {
           <img></img>
         </div>
         <div className='project3Description rightSideDescription'>
-          <h3>
+          <h3 className='heading'>
             Wallace Corporation
           </h3>
-          <p>
+          <p className='bodyText projectText'>
             An e-commerce platform that allows users the ability to cycle through products, see reviews and ratings, questions and answers about a specific product.
           </p>
         </div>

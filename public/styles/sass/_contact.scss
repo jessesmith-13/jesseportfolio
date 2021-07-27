@@ -1,7 +1,9 @@
+@use "./_home.scss" as home;
 @import "./variables";
 // @use "./_aboutMe.scss" as s;
 
 div.contactSection {
+  height: 100vh;
   @include section($oliveBlack);
   display: flex;
   flex-direction: column;

@@ -13,7 +13,7 @@
   margin: 0 0 0 25%;
   grid-column: 1/2;
   font-size: 2em;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
 }
 .navbar h1:hover {
@@ -32,7 +32,7 @@
   all: unset;
   margin-right: 20px;
   font-size: 1.25em;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
 }
 .navbar .sections h2:hover {
@@ -56,8 +56,13 @@ img.portrait:hover {
   transform: scale(1.025);
 }
 
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .homeContainer {
   height: 100vh;
+  border: solid black 1px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -65,8 +70,13 @@ img.portrait:hover {
   align-items: center;
 }
 .homeContainer .introText {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 3em;
+  font-weight: 300;
+}
+.homeContainer .introText2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
 }
 .homeContainer .portraitContainer {
   display: flex;
@@ -80,16 +90,93 @@ img.portrait:hover {
   justify-content: space-around;
   margin-top: 2%;
 }
-.homeContainer .iconContainer .icon {
+
+.icon {
   size: 200;
+}
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.bodyText {
+  font-family: "Titillium Web", sans-serif;
+}
+
+img.portrait {
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #aba194;
+  transition: all 0.2s ease-in-out;
+}
+
+img.portrait:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.homeContainer {
+  height: 100vh;
+  border: solid black 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer .introText {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.homeContainer .introText2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.homeContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.homeContainer .iconContainer {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.icon {
+  size: 200;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.bodyText {
+  font-family: "Titillium Web", sans-serif;
 }
 
 div .projectsSection {
   height: 100vh;
+  border: solid black 1px;
   background-color: #423e37;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 div .projectsSection .projectsHeading {
   margin: 5.5% 0 3% 0;
@@ -156,6 +243,75 @@ div .projectsContainer .project3Image {
   grid-column: 1/2;
   grid-row: 3/4;
 }
+div .projectText {
+  font-size: 0.9em;
+}
+
+img.portrait {
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #aba194;
+  transition: all 0.2s ease-in-out;
+}
+
+img.portrait:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.homeContainer {
+  height: 100vh;
+  border: solid black 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer .introText {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.homeContainer .introText2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.homeContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.homeContainer .iconContainer {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.icon {
+  size: 200;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.bodyText {
+  font-family: "Titillium Web", sans-serif;
+}
 
 div.technologiesSection {
   height: 100vh;
@@ -178,6 +334,10 @@ div.technologiesSection .column {
 }
 div.technologiesSection .column p {
   all: unset;
+  font-family: "Titillium Web", sans-serif;
+}
+div.technologiesSection .column h3 {
+  font-family: "Josefin Sans", sans-serif;
 }
 div.technologiesSection .column1 {
   grid-column: 1/2;
@@ -192,8 +352,76 @@ div.technologiesSection .column4 {
   grid-column: 4/5;
 }
 
+img.portrait {
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #aba194;
+  transition: all 0.2s ease-in-out;
+}
+
+img.portrait:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.homeContainer {
+  height: 100vh;
+  border: solid black 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer .introText {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.homeContainer .introText2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.homeContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.homeContainer .iconContainer {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.icon {
+  size: 200;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.bodyText {
+  font-family: "Titillium Web", sans-serif;
+}
+
 div.contactSection {
   height: 100vh;
+  height: 100vh;
+  border: solid black 1px;
   background-color: #423e37;
   display: flex;
   flex-direction: column;
@@ -225,12 +453,80 @@ div.contactSection .contactContainer .iconContainer .contactIcon:hover {
   cursor: pointer;
 }
 
+img.portrait {
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #aba194;
+  transition: all 0.2s ease-in-out;
+}
+
+img.portrait:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.homeContainer {
+  height: 100vh;
+  border: solid black 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer .introText {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.homeContainer .introText2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.homeContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.homeContainer .iconContainer {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.icon {
+  size: 200;
+}
+
+.icon:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.bodyText {
+  font-family: "Titillium Web", sans-serif;
+}
+
 .aboutMeSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  border: solid black 1px;
   background-color: white;
 }
 .aboutMeSection .aboutMeTextContainer {
