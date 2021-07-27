@@ -12,14 +12,19 @@ div.technologiesSection {
   width: 100vw;
   @include flexCenter();
 
+  h2 {
+    margin-bottom: 6%;
+  }
   .technologiesContainer {
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .column {
-    @include flexCenter();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p {
       all: unset;
       font-family: $mainText;

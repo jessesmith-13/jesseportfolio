@@ -5,6 +5,9 @@ import smoveLandingPage from '../assets/img/smove.png';
 // import profileScreen from '../assets/img/profileScreen.png';
 import smoveTaskList from '../assets/img/smoveTaskList.png';
 import smoveMovingServices from '../assets/img/smoveMovingServices.png';
+import wallace1 from '../assets/img/wallace1.png'
+import wallace2 from '../assets/img/wallace2.png'
+import wallace3 from '../assets/img/wallace3.png'
 // import { StickyContainer } from 'react-sticky';
 import Carousel from 'react-material-ui-carousel'
 import flixgrubGif from '../../../public/flixgrub.gif';
@@ -14,12 +17,12 @@ export const Projects: React.FC = () => {
     <div id='projects' className='container projectsSection'>
       <h2 className='heading projectsHeading'>PERSONAL PROJECTS</h2>
       <div className='projectsContainer'>
-        <Carousel className='projectImageContainer project1ImageContainer'>
+        <Carousel className='projectBox projectImageContainer project1ImageContainer'>
           <img className='projectImage project1Image' src={smoveLandingPage}></img>
           <img className='projectImage project1Image' src={smoveTaskList}></img>
           <img className='projectImage project1Image' src={smoveMovingServices}></img>
         </Carousel>
-        <div className='project1Description rightSideDescription'>
+        <div className='projectBox project1Description rightSideDescription'>
           <h3 className='heading'>
             Smove
           </h3>
@@ -33,10 +36,10 @@ export const Projects: React.FC = () => {
           <img className='projectImage project2Image' src={listViewScreen} ></img>
           <img className='projectImage project2Image' src={profileScreen} ></img>
         </Carousel> */}
-        <div className="projectImageContainer project2ImageContainer">
+        <div className="projectBox projectImageContainer project2ImageContainer">
           <img className='projectImage project2Image' src={flixgrubGif} alt="flixgrub" />
         </div>
-        <div className='project2Description leftSideDescription'>
+        <div className='projectBox project2Description leftSideDescription'>
           <h3 className='heading'>
             FlixGrub
           </h3>
@@ -45,10 +48,14 @@ export const Projects: React.FC = () => {
             Smove integrates all the pieces of moving including finding vendors, tracking tasks and inventory, and collaborating with family & friends.
           </p>
         </div>
-        <div className='projectImageContainer project3ImageContainer'>
-          <img></img>
+        <div className='projectBox projectImageContainer project3ImageContainer'>
+          <Carousel className='projectBox projectImageContainer project1ImageContainer'>
+          <img className='projectImage project1Image' src={wallace1}></img>
+          <img className='projectImage project1Image' src={wallace2}></img>
+          <img className='projectImage project1Image' src={wallace3}></img>
+          </Carousel>
         </div>
-        <div className='project3Description rightSideDescription'>
+        <div className='projectBox project3Description rightSideDescription'>
           <h3 className='heading'>
             Wallace Corporation
           </h3>

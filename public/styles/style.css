@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #423e37;
+  background-color: #393e41;
   height: 8vh;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -183,15 +183,19 @@ div .projectsSection .projectsHeading {
 }
 div .projectsContainer {
   height: 80%;
-  width: 65%;
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+div .projectsContainer .projectBox {
+  max-width: 400px;
+  max-height: 200px;
+  min-width: 200px;
+}
 div .projectsContainer .projectImageContainer {
   background-color: white;
   height: 100%;
-  max-height: 30vh;
   width: 100%;
 }
 div .projectsContainer .projectImageContainer:hover {
@@ -321,8 +325,11 @@ div.technologiesSection {
   align-items: center;
   justify-content: center;
 }
+div.technologiesSection h2 {
+  margin-bottom: 6%;
+}
 div.technologiesSection .technologiesContainer {
-  width: 90%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -330,7 +337,6 @@ div.technologiesSection .column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 div.technologiesSection .column p {
   all: unset;
@@ -454,14 +460,14 @@ div.contactSection .contactContainer .iconContainer .contactIcon:hover {
 }
 
 img.portrait {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   z-index: 1;
   border-radius: 50%;
   box-shadow: 5px 5px 20px #aba194;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2%;
 }
-
 img.portrait:hover {
   cursor: pointer;
   transform: scale(1.025);
@@ -473,32 +479,62 @@ img.portrait:hover {
 
 .homeContainer {
   height: 100vh;
-  border: solid black 1px;
   background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1.5fr;
+}
+.homeContainer .topLeftGrid {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.homeContainer .bottomLeftGrid {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
+.homeContainer .topRightGrid {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: #ffbc0a;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.homeContainer .bottomRightGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #ffbc0a;
+}
+.homeContainer .bottomRightGrid p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.125em;
+  padding: 0 8em 0;
+  color: #eaf7cf;
+  font-weight: 900;
+}
 .homeContainer .introText {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3em;
   font-weight: 300;
 }
-
+.homeContainer .aboutHeading {
+  color: #eaf7cf;
+}
 .homeContainer .introText2 {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
 }
-
-.homeContainer .portraitContainer {
-  display: flex;
-  align-items: center;
-  width: 50vw;
-  justify-content: space-around;
-}
-
 .homeContainer .iconContainer {
   width: 20vw;
   display: flex;
@@ -509,7 +545,6 @@ img.portrait:hover {
 .icon {
   size: 200;
 }
-
 .icon:hover {
   cursor: pointer;
   opacity: 50%;
@@ -517,29 +552,6 @@ img.portrait:hover {
 
 .bodyText {
   font-family: "Titillium Web", sans-serif;
-}
-
-.aboutMeSection {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  border: solid black 1px;
-  background-color: white;
-}
-.aboutMeSection .aboutMeTextContainer {
-  padding: 2em;
-  height: 50vh;
-  width: 40vw;
-  min-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 5px 5px 20px #aba194;
-  border-radius: 10px;
-  background-color: #007da750;
 }
 
 .mainContainer {

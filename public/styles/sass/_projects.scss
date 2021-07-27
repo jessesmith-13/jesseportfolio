@@ -20,14 +20,18 @@ div {
   }
   .projectsContainer {
     height: 80%;
-    width: 65%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    .projectBox {
+      max-width: 400px;
+      max-height: 200px;
+      min-width: 200px;
+    }
     .projectImageContainer {
       background-color: white;
       height: 100%;
-      max-height: 30vh;
       width: 100%;
       // display: flex;
       // align-items: center;
