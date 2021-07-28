@@ -5,17 +5,19 @@
   color: white;
   &:hover {
     cursor: pointer;
-    color: $cgBlue;
+    color: $background2;
   }
 }
 
 .navbar {
+  flex: 0 0 auto;
   background-color: $mainDark;
-  height: 8vh;
+  height: 8.25vh;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   position: sticky;
   position: -webkit-sticky;
+  // position: absolute;
   top: 0;
   z-index: 1000;
   h1 {
@@ -26,7 +28,7 @@
     @include headerText();
   }
   .active {
-    color: $cgBlue;
+    color: $background2;
   }
   .sections {
     grid-column: 3/4;
@@ -39,7 +41,7 @@
       @include headerText();
     }
     .active {
-      color: $cgBlue;
+      color: $background2;
     }
   }
 }

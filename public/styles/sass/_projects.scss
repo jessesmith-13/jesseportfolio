@@ -9,14 +9,14 @@
 
 div {
   .projectsSection {
-    @include section($oliveBlack);
+    @include section(#e7e7e7);
     display: flex;
     flex-direction: column;
     align-items: center;
     .projectsHeading {
-      margin: 5.5% 0 3% 0;
+      margin: 1% 0 3% 0;
     }
-    height: 100vh;
+    height: 100%;
   }
   .projectsContainer {
     height: 80%;
@@ -45,10 +45,12 @@ div {
       .project1Image {
         height: 100%;
         width: 100%;
+        background-color: #e7e7e7;
       }
       .project2Image {
         height: 100%;
         width: 100%;
+        background-color: #e7e7e7;
       }
     }
     .project1ImageContainer {

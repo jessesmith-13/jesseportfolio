@@ -4,7 +4,7 @@
 
 div.contactSection {
   height: 100vh;
-  @include section($oliveBlack);
+  @include section($mainDark);
   display: flex;
   flex-direction: column;
   align-items: center;

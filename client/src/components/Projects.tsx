@@ -17,7 +17,13 @@ export const Projects: React.FC = () => {
     <div id='projects' className='container projectsSection'>
       <h2 className='heading projectsHeading'>PERSONAL PROJECTS</h2>
       <div className='projectsContainer'>
-        <Carousel className='projectBox projectImageContainer project1ImageContainer'>
+        <Carousel 
+          autoPlay={false} 
+          animation={'slide'}
+          // indicators={false}
+          // navButtonsAlwaysVisible={true}
+          className='projectBox projectImageContainer project1ImageContainer'
+        >
           <img className='projectImage project1Image' src={smoveLandingPage}></img>
           <img className='projectImage project1Image' src={smoveTaskList}></img>
           <img className='projectImage project1Image' src={smoveMovingServices}></img>
@@ -49,7 +55,10 @@ export const Projects: React.FC = () => {
           </p>
         </div>
         <div className='projectBox projectImageContainer project3ImageContainer'>
-          <Carousel className='projectBox projectImageContainer project1ImageContainer'>
+          <Carousel 
+            autoPlay={false} 
+            className='projectBox projectImageContainer project1ImageContainer'
+          >
           <img className='projectImage project1Image' src={wallace1}></img>
           <img className='projectImage project1Image' src={wallace2}></img>
           <img className='projectImage project1Image' src={wallace3}></img>

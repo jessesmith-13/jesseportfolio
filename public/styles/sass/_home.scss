@@ -1,111 +1,43 @@
 @import "./variables";
 
 @mixin section($color) {
-  height: 100vh;
-  border: solid black 1px;
+  height: 100%;
   background-color: $color;
 }
 
-img.portrait {
-  height: 300px;
-  width: 300px;
-  z-index: 1;
-  border-radius: 50%;
-  // grid-column: 2;
-  // grid-row: 2/3;
-  box-shadow: 5px 5px 20px $grullo;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-  }
-}
-
-.heading {
-  font-family: $heading;
+@mixin circleFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeContainer {
   @include section(white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  // background-image: url("/stars.jpg");
-  // display: grid;
-  // position: relative;
-  // grid-template-columns: 1fr 1fr 4fr;
-  // grid-template-rows: repeat(4, 1fr);
-  .introText {
-    font-family: $heading;
-    font-size: 3em;
-    font-weight: 300;
+  @include circleFlex();
+  .circle {
+    border-radius: 50%;
+    border: solid black 1px;
+    @include circleFlex();
   }
-  .introText2 {
-    font-family: $mainText;
-    font-size: 1.5em;
+  .circle1 {
+    height: 600px;
+    width: 600px;
+    background-color: $background1;
+    // display: flex;
   }
-  .portraitContainer {
-    display: flex;
-    align-items: center;
-    width: 50vw;
-    justify-content: space-around;
+  .circle2 {
+    height: 400px;
+    width: 400px;
+    background-color: $background2;
   }
-  .iconContainer {
-    width: 20vw;
-    // grid-row: 3/4;
-    // grid-column: 2/3;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2%;
+  .circle3 {
+    height: 200px;
+    width: 200px;
+    background-color: $accent1;
+  }
+  .circle4 {
+    height: 50px;
+    width: 50px;
+    background-color: $accent2;
   }
 }
-
-.icon {
-  size: 200;
-  &:hover {
-    cursor: pointer;
-    opacity: 50%;
-  }
-}
-
-.bodyText {
-  font-family: $mainText;
-}
-@media (min-width: 900px) {
-}
-
-// div {
-//   .portraitBar {
-//     background-color: $cgBlue;
-//     // position: absolute;
-//     // top: 47.65%;
-//     // left: 30%;
-//     // height: 10%;
-//     // width: 75vw;
-//     height: 29%;
-//     width: 81vw;
-//     grid-column: 3/5;
-//     grid-row: 2/3;
-//     justify-self: center;
-//     align-self: flex-end;
-//     margin-bottom: 3.9%;
-//     display: flex;
-//     align-items: center;
-//     h3 {
-//       color: white;
-//       margin-left: 10%;
-//     }
-//   }
-
-//   .introContainer {
-//     grid-row: 2/3;
-//     grid-column: 3/4;
-//     align-self: center;
-//     margin: 0 0 2% 2%;
-//     .introText {
-//       font-weight: lighter;
-//     }
-//   }
-// }

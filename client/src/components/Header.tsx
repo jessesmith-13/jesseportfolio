@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StickyContainer } from 'react-sticky';
+// import { StickyContainer } from 'react-sticky';
 import { useState } from 'react';
 
 
@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
   }
 
   return (
-    <StickyContainer className='navbar'>
+    <header className='navbar'>
       <h1 className={handleActiveClass('home')} onClick={() => handleClick('home')}>JS</h1>
       {/* <Link 
           className='h1'
@@ -83,6 +83,6 @@ export const Header: React.FC = () => {
         <h2 className={handleActiveClass('technologies')} onClick={() => handleClick('technologies')}>Technologies</h2>
         <h2 className={handleActiveClass('contact')} onClick={() => handleClick('contact')}>Contact</h2>
       </div>
-    </StickyContainer>
+    </header>
   )
 }

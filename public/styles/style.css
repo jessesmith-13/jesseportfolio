@@ -1,6 +1,7 @@
 .navbar {
+  flex: 0 0 auto;
   background-color: #393e41;
-  height: 8vh;
+  height: 8.25vh;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   position: sticky;
@@ -18,10 +19,10 @@
 }
 .navbar h1:hover {
   cursor: pointer;
-  color: #007da750;
+  color: #fcbfb7;
 }
 .navbar .active {
-  color: #007da750;
+  color: #fcbfb7;
 }
 .navbar .sections {
   grid-column: 3/4;
@@ -37,149 +38,97 @@
 }
 .navbar .sections h2:hover {
   cursor: pointer;
-  color: #007da750;
+  color: #fcbfb7;
 }
 .navbar .sections .active {
-  color: #007da750;
-}
-
-img.portrait {
-  height: 300px;
-  width: 300px;
-  z-index: 1;
-  border-radius: 50%;
-  box-shadow: 5px 5px 20px #aba194;
-  transition: all 0.2s ease-in-out;
-}
-img.portrait:hover {
-  cursor: pointer;
-  transform: scale(1.025);
-}
-
-.heading {
-  font-family: "Josefin Sans", sans-serif;
+  color: #fcbfb7;
 }
 
 .homeContainer {
-  height: 100vh;
-  border: solid black 1px;
+  height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.homeContainer .introText {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-}
-.homeContainer .introText2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.5em;
-}
-.homeContainer .portraitContainer {
-  display: flex;
-  align-items: center;
-  width: 50vw;
-  justify-content: space-around;
-}
-.homeContainer .iconContainer {
-  width: 20vw;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2%;
-}
-
-.icon {
-  size: 200;
-}
-.icon:hover {
-  cursor: pointer;
-  opacity: 50%;
-}
-
-.bodyText {
-  font-family: "Titillium Web", sans-serif;
-}
-
-img.portrait {
-  height: 300px;
-  width: 300px;
-  z-index: 1;
+.homeContainer .circle {
   border-radius: 50%;
-  box-shadow: 5px 5px 20px #aba194;
-  transition: all 0.2s ease-in-out;
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-img.portrait:hover {
-  cursor: pointer;
-  transform: scale(1.025);
+.homeContainer .circle1 {
+  height: 600px;
+  width: 600px;
+  background-color: #eaf7cf;
 }
-
-.heading {
-  font-family: "Josefin Sans", sans-serif;
+.homeContainer .circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: #fcbfb7;
+}
+.homeContainer .circle3 {
+  height: 200px;
+  width: 200px;
+  background-color: #ffbc0a;
+}
+.homeContainer .circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: #3f88c5;
 }
 
 .homeContainer {
-  height: 100vh;
-  border: solid black 1px;
+  height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .introText {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-}
-
-.homeContainer .introText2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.5em;
-}
-
-.homeContainer .portraitContainer {
+.homeContainer .circle {
+  border-radius: 50%;
+  border: solid black 1px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 50vw;
-  justify-content: space-around;
 }
 
-.homeContainer .iconContainer {
-  width: 20vw;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2%;
+.homeContainer .circle1 {
+  height: 600px;
+  width: 600px;
+  background-color: #eaf7cf;
 }
 
-.icon {
-  size: 200;
+.homeContainer .circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: #fcbfb7;
 }
 
-.icon:hover {
-  cursor: pointer;
-  opacity: 50%;
+.homeContainer .circle3 {
+  height: 200px;
+  width: 200px;
+  background-color: #ffbc0a;
 }
 
-.bodyText {
-  font-family: "Titillium Web", sans-serif;
+.homeContainer .circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: #3f88c5;
 }
 
 div .projectsSection {
-  height: 100vh;
-  border: solid black 1px;
-  background-color: #423e37;
+  height: 100%;
+  background-color: #e7e7e7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 div .projectsSection .projectsHeading {
-  margin: 5.5% 0 3% 0;
+  margin: 1% 0 3% 0;
 }
 div .projectsContainer {
   height: 80%;
@@ -204,10 +153,12 @@ div .projectsContainer .projectImageContainer:hover {
 div .projectsContainer .projectImageContainer .project1Image {
   height: 100%;
   width: 100%;
+  background-color: #e7e7e7;
 }
 div .projectsContainer .projectImageContainer .project2Image {
   height: 100%;
   width: 100%;
+  background-color: #e7e7e7;
 }
 div .projectsContainer .project1ImageContainer {
   grid-column: 1/2;
@@ -251,79 +202,54 @@ div .projectText {
   font-size: 0.9em;
 }
 
-img.portrait {
-  height: 300px;
-  width: 300px;
-  z-index: 1;
-  border-radius: 50%;
-  box-shadow: 5px 5px 20px #aba194;
-  transition: all 0.2s ease-in-out;
-}
-
-img.portrait:hover {
-  cursor: pointer;
-  transform: scale(1.025);
-}
-
-.heading {
-  font-family: "Josefin Sans", sans-serif;
-}
-
 .homeContainer {
-  height: 100vh;
-  border: solid black 1px;
+  height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .introText {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-}
-
-.homeContainer .introText2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.5em;
-}
-
-.homeContainer .portraitContainer {
+.homeContainer .circle {
+  border-radius: 50%;
+  border: solid black 1px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 50vw;
-  justify-content: space-around;
 }
 
-.homeContainer .iconContainer {
-  width: 20vw;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2%;
+.homeContainer .circle1 {
+  height: 600px;
+  width: 600px;
+  background-color: #eaf7cf;
 }
 
-.icon {
-  size: 200;
+.homeContainer .circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: #fcbfb7;
 }
 
-.icon:hover {
-  cursor: pointer;
-  opacity: 50%;
+.homeContainer .circle3 {
+  height: 200px;
+  width: 200px;
+  background-color: #ffbc0a;
 }
 
-.bodyText {
-  font-family: "Titillium Web", sans-serif;
+.homeContainer .circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: #3f88c5;
 }
 
 div.technologiesSection {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fcbfb7;
 }
 div.technologiesSection h2 {
   margin-bottom: 6%;
@@ -358,77 +284,50 @@ div.technologiesSection .column4 {
   grid-column: 4/5;
 }
 
-img.portrait {
-  height: 300px;
-  width: 300px;
-  z-index: 1;
-  border-radius: 50%;
-  box-shadow: 5px 5px 20px #aba194;
-  transition: all 0.2s ease-in-out;
-}
-
-img.portrait:hover {
-  cursor: pointer;
-  transform: scale(1.025);
-}
-
-.heading {
-  font-family: "Josefin Sans", sans-serif;
-}
-
 .homeContainer {
-  height: 100vh;
-  border: solid black 1px;
+  height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .introText {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-}
-
-.homeContainer .introText2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.5em;
-}
-
-.homeContainer .portraitContainer {
+.homeContainer .circle {
+  border-radius: 50%;
+  border: solid black 1px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 50vw;
-  justify-content: space-around;
 }
 
-.homeContainer .iconContainer {
-  width: 20vw;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2%;
+.homeContainer .circle1 {
+  height: 600px;
+  width: 600px;
+  background-color: #eaf7cf;
 }
 
-.icon {
-  size: 200;
+.homeContainer .circle2 {
+  height: 400px;
+  width: 400px;
+  background-color: #fcbfb7;
 }
 
-.icon:hover {
-  cursor: pointer;
-  opacity: 50%;
+.homeContainer .circle3 {
+  height: 200px;
+  width: 200px;
+  background-color: #ffbc0a;
 }
 
-.bodyText {
-  font-family: "Titillium Web", sans-serif;
+.homeContainer .circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: #3f88c5;
 }
 
 div.contactSection {
   height: 100vh;
-  height: 100vh;
-  border: solid black 1px;
-  background-color: #423e37;
+  height: 100%;
+  background-color: #393e41;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -477,14 +376,14 @@ img.portrait:hover {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.homeContainer {
-  height: 100vh;
+.aboutMeContainer {
+  height: 100%;
   background-color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1.5fr;
 }
-.homeContainer .topLeftGrid {
+.aboutMeContainer .topLeftGrid {
   grid-row: 1/2;
   grid-column: 1/2;
   height: 100%;
@@ -492,7 +391,7 @@ img.portrait:hover {
   align-items: flex-end;
   justify-content: center;
 }
-.homeContainer .bottomLeftGrid {
+.aboutMeContainer .bottomLeftGrid {
   grid-row: 2/3;
   grid-column: 1/2;
   height: 100%;
@@ -500,7 +399,7 @@ img.portrait:hover {
   flex-direction: column;
   align-items: center;
 }
-.homeContainer .topRightGrid {
+.aboutMeContainer .topRightGrid {
   grid-row: 1/2;
   grid-column: 2/3;
   background-color: #ffbc0a;
@@ -509,33 +408,33 @@ img.portrait:hover {
   align-items: flex-end;
   justify-content: center;
 }
-.homeContainer .bottomRightGrid {
+.aboutMeContainer .bottomRightGrid {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   background-color: #ffbc0a;
 }
-.homeContainer .bottomRightGrid p {
+.aboutMeContainer .bottomRightGrid p {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.125em;
   padding: 0 8em 0;
   color: #eaf7cf;
   font-weight: 900;
 }
-.homeContainer .introText {
+.aboutMeContainer .introText {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3em;
   font-weight: 300;
 }
-.homeContainer .aboutHeading {
+.aboutMeContainer .aboutHeading {
   color: #eaf7cf;
 }
-.homeContainer .introText2 {
+.aboutMeContainer .introText2 {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
 }
-.homeContainer .iconContainer {
+.aboutMeContainer .iconContainer {
   width: 20vw;
   display: flex;
   justify-content: space-around;
@@ -555,7 +454,7 @@ img.portrait:hover {
 }
 
 .mainContainer {
-  height: 100vh;
+  height: 92vh;
   overflow: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;

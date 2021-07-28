@@ -8,10 +8,10 @@
 }
 
 div.technologiesSection {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   @include flexCenter();
-
+  background-color: $background2;
   h2 {
     margin-bottom: 6%;
   }
