@@ -24,6 +24,7 @@ div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    min-width: 600px;
     .projectBox {
       max-width: 400px;
       max-height: 200px;
@@ -90,17 +91,18 @@ div {
 
     .rightSideDescription {
       @include descriptionFlex();
-      padding: 5%;
+      padding: 5% 5% 0 5%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .leftSideDescription {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 5%;
+      align-items: flex-end;
+      padding: 0 5% 5%;
+      text-align: end;
     }
 
     .project3Image {

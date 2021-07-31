@@ -35,6 +35,15 @@ div.contactSection {
           cursor: pointer;
         }
       }
+      .emailIcon {
+        color: $background2;
+      }
+      .linkedInIcon {
+        color: $accent1;
+      }
+      .githubIcon {
+        color: $accent2;
+      }
     }
   }
 }

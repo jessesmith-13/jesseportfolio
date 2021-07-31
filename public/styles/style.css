@@ -48,77 +48,132 @@
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.homeContainer .circle {
-  border-radius: 50%;
-  border: solid black 1px;
+.homeContainer .whiteSpace {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.homeContainer .circle1 {
-  height: 600px;
-  width: 600px;
-  background-color: #eaf7cf;
+.homeContainer .whiteSpace h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4rem;
 }
-.homeContainer .circle2 {
-  height: 400px;
-  width: 400px;
-  background-color: #fcbfb7;
+.homeContainer .whiteSpace h2 {
+  position: relative;
 }
-.homeContainer .circle3 {
-  height: 200px;
-  width: 200px;
-  background-color: #ffbc0a;
+.homeContainer .whiteSpace h2::before,
+.homeContainer .whiteSpace h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-.homeContainer .circle4 {
-  height: 50px;
-  width: 50px;
-  background-color: #3f88c5;
+.homeContainer .whiteSpace h2::before {
+  background: teal;
+  animation: typewriter 4s steps(7) forwards;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+.homeContainer .waveContainer {
+  height: 50vh;
+  width: 100vw;
+}
+.homeContainer .waveContainer #wave {
+  height: 100%;
+  right: 1000px;
+}
+.homeContainer .wave:hover {
+  cursor: pointer;
+  opacity: 50%;
 }
 
+.testWave2 {
+  animation: moveWave2 5s linear infinite;
+}
+
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    color: blue;
+  }
+}
 .homeContainer {
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.homeContainer .circle {
-  border-radius: 50%;
-  border: solid black 1px;
+.homeContainer .whiteSpace {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .circle1 {
-  height: 600px;
-  width: 600px;
-  background-color: #eaf7cf;
+.homeContainer .whiteSpace h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4rem;
 }
 
-.homeContainer .circle2 {
-  height: 400px;
-  width: 400px;
-  background-color: #fcbfb7;
+.homeContainer .whiteSpace h2 {
+  position: relative;
 }
 
-.homeContainer .circle3 {
-  height: 200px;
-  width: 200px;
-  background-color: #ffbc0a;
+.homeContainer .whiteSpace h2::before,
+.homeContainer .whiteSpace h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.homeContainer .circle4 {
-  height: 50px;
-  width: 50px;
-  background-color: #3f88c5;
+.homeContainer .whiteSpace h2::before {
+  background: teal;
+  animation: typewriter 4s steps(7) forwards;
 }
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+.homeContainer .waveContainer {
+  height: 50vh;
+  width: 100vw;
+}
+
+.homeContainer .waveContainer #wave {
+  height: 100%;
+  right: 1000px;
+}
+
+.homeContainer .wave:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.testWave2 {
+  animation: moveWave2 5s linear infinite;
+}
+
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    color: blue;
+  }
+}
 div .projectsSection {
   height: 100%;
   background-color: #e7e7e7;
@@ -136,6 +191,7 @@ div .projectsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  min-width: 600px;
 }
 div .projectsContainer .projectBox {
   max-width: 400px;
@@ -183,16 +239,17 @@ div .projectsContainer .rightSideDescription {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 5%;
+  padding: 5% 5% 0 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 div .projectsContainer .leftSideDescription {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 5%;
+  align-items: flex-end;
+  padding: 0 5% 5%;
+  text-align: end;
 }
 div .projectsContainer .project3Image {
   grid-column: 1/2;
@@ -206,42 +263,71 @@ div .projectText {
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.homeContainer .circle {
-  border-radius: 50%;
-  border: solid black 1px;
+.homeContainer .whiteSpace {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .circle1 {
-  height: 600px;
-  width: 600px;
-  background-color: #eaf7cf;
+.homeContainer .whiteSpace h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4rem;
 }
 
-.homeContainer .circle2 {
-  height: 400px;
-  width: 400px;
-  background-color: #fcbfb7;
+.homeContainer .whiteSpace h2 {
+  position: relative;
 }
 
-.homeContainer .circle3 {
-  height: 200px;
-  width: 200px;
-  background-color: #ffbc0a;
+.homeContainer .whiteSpace h2::before,
+.homeContainer .whiteSpace h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.homeContainer .circle4 {
-  height: 50px;
-  width: 50px;
-  background-color: #3f88c5;
+.homeContainer .whiteSpace h2::before {
+  background: teal;
+  animation: typewriter 4s steps(7) forwards;
 }
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+.homeContainer .waveContainer {
+  height: 50vh;
+  width: 100vw;
+}
+
+.homeContainer .waveContainer #wave {
+  height: 100%;
+  right: 1000px;
+}
+
+.homeContainer .wave:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.testWave2 {
+  animation: moveWave2 5s linear infinite;
+}
+
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    color: blue;
+  }
+}
 div.technologiesSection {
   height: 100%;
   width: 100vw;
@@ -253,6 +339,7 @@ div.technologiesSection {
 }
 div.technologiesSection h2 {
   margin-bottom: 6%;
+  color: #393e41;
 }
 div.technologiesSection .technologiesContainer {
   width: 80%;
@@ -263,13 +350,18 @@ div.technologiesSection .column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2em;
 }
 div.technologiesSection .column p {
   all: unset;
   font-family: "Titillium Web", sans-serif;
+  color: #393e41;
+  font-size: 1.25em;
 }
 div.technologiesSection .column h3 {
   font-family: "Josefin Sans", sans-serif;
+  color: #393e41;
+  font-size: 1.4em;
 }
 div.technologiesSection .column1 {
   grid-column: 1/2;
@@ -288,42 +380,71 @@ div.technologiesSection .column4 {
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.homeContainer .circle {
-  border-radius: 50%;
-  border: solid black 1px;
+.homeContainer .whiteSpace {
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.homeContainer .circle1 {
-  height: 600px;
-  width: 600px;
-  background-color: #eaf7cf;
+.homeContainer .whiteSpace h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4rem;
 }
 
-.homeContainer .circle2 {
-  height: 400px;
-  width: 400px;
-  background-color: #fcbfb7;
+.homeContainer .whiteSpace h2 {
+  position: relative;
 }
 
-.homeContainer .circle3 {
-  height: 200px;
-  width: 200px;
-  background-color: #ffbc0a;
+.homeContainer .whiteSpace h2::before,
+.homeContainer .whiteSpace h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.homeContainer .circle4 {
-  height: 50px;
-  width: 50px;
-  background-color: #3f88c5;
+.homeContainer .whiteSpace h2::before {
+  background: teal;
+  animation: typewriter 4s steps(7) forwards;
 }
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+.homeContainer .waveContainer {
+  height: 50vh;
+  width: 100vw;
+}
+
+.homeContainer .waveContainer #wave {
+  height: 100%;
+  right: 1000px;
+}
+
+.homeContainer .wave:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.testWave2 {
+  animation: moveWave2 5s linear infinite;
+}
+
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    color: blue;
+  }
+}
 div.contactSection {
   height: 100vh;
   height: 100%;
@@ -356,6 +477,15 @@ div.contactSection .contactContainer .iconContainer {
 }
 div.contactSection .contactContainer .iconContainer .contactIcon:hover {
   cursor: pointer;
+}
+div.contactSection .contactContainer .iconContainer .emailIcon {
+  color: #fcbfb7;
+}
+div.contactSection .contactContainer .iconContainer .linkedInIcon {
+  color: #ffbc0a;
+}
+div.contactSection .contactContainer .iconContainer .githubIcon {
+  color: #3f88c5;
 }
 
 img.portrait {

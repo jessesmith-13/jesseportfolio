@@ -14,6 +14,7 @@ div.technologiesSection {
   background-color: $background2;
   h2 {
     margin-bottom: 6%;
+    color: $mainDark;
   }
   .technologiesContainer {
     width: 80%;
@@ -25,12 +26,17 @@ div.technologiesSection {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 2em;
     p {
       all: unset;
       font-family: $mainText;
+      color: $mainDark;
+      font-size: 1.25em;
     }
     h3 {
       font-family: $heading;
+      color: $mainDark;
+      font-size: 1.4em;
     }
   }
 

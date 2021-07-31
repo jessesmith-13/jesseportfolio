@@ -7,37 +7,136 @@
 
 @mixin circleFlex {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .homeContainer {
   @include section(white);
   @include circleFlex();
-  .circle {
-    border-radius: 50%;
-    border: solid black 1px;
-    @include circleFlex();
+  .whiteSpace {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: $mainText;
+      font-size: 4rem;
+    }
+    h2 {
+      position: relative;
+    }
+    h2::before,
+    h2::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    h2::before {
+      background: teal;
+      animation: typewriter 4s steps(7) forwards;
+    }
+
+    @keyframes typewriter {
+      to {
+        left: 100%;
+      }
+    }
   }
-  .circle1 {
-    height: 600px;
-    width: 600px;
-    background-color: $background1;
-    // display: flex;
+  .waveContainer {
+    height: 50vh;
+    width: 100vw;
+    // overflow: hidden;
+    #wave {
+      height: 100%;
+      right: 1000px;
+    }
   }
-  .circle2 {
-    height: 400px;
-    width: 400px;
-    background-color: $background2;
+  .wave {
+    // @include circleFlex();
+    &:hover {
+      cursor: pointer;
+      opacity: 50%;
+    }
   }
-  .circle3 {
-    height: 200px;
-    width: 200px;
-    background-color: $accent1;
-  }
-  .circle4 {
-    height: 50px;
-    width: 50px;
-    background-color: $accent2;
+
+  // .wave {
+  //   height: 5vh;
+  //   width: 400%;
+  // }
+  // .greenWave {
+  //   animation: moveGreenWave 5s infinite;
+  // }
+  // .pinkWave {
+  //   animation: movePinkWave 5s infinite reverse;
+  // }
+  // .yellowWave {
+  //   animation: moveYellowWave 15s infinite;
+  // }
+  // .blueWave {
+  //   animation: moveBlueWave 10s infinite;
+  //   position: absolute;
+  // }
+  // @keyframes moveGreenWave {
+  //   0% {
+  //     transform: translateX(0) translateY(0);
+  //   }
+  //   50% {
+  //     transform: translateX(-50%) translateY(50%);
+  //   }
+  //   100% {
+  //     transform: translateX(0) translateY(0);
+  //   }
+  // }
+  // @keyframes movePinkWave {
+  //   0% {
+  //     transform: translateX(0);
+  //   }
+  //   50% {
+  //     transform: translateX(50%);
+  //   }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
+  // @keyframes moveYellowWave {
+  //   0% {
+  //     transform: translateX(0) translateY(0);
+  //   }
+  //   50% {
+  //     transform: translateX(-50%) translateY(50%) rotate(10deg);
+  //   }
+  //   100% {
+  //     transform: translateX(0) translateY(0);
+  //   }
+  // }
+  // @keyframes moveBlueWave {
+  //   0% {
+  //     transform: translateX(0) translateY(20%);
+  //   }
+  //   50% {
+  //     transform: translateX(50%);
+  //   }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
+}
+
+// .testWave1 {
+//   position: absolute;
+// }
+.testWave2 {
+  // width: 200%;
+  animation: moveWave2 5s linear infinite;
+}
+
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    color: blue;
   }
 }
