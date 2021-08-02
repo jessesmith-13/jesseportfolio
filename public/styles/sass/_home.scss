@@ -17,14 +17,23 @@
   .whiteSpace {
     height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10rem;
     h1 {
       font-family: $mainText;
-      font-size: 4rem;
+      font-size: 8vw;
+      opacity: 0;
+      transform: translateY(-3rem);
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
     }
     h2 {
+      font-family: $heading;
       position: relative;
+      // outline: 2px solid red;
+      letter-spacing: 1rem;
     }
     h2::before,
     h2::after {
@@ -36,13 +45,29 @@
       left: 0;
     }
     h2::before {
-      background: teal;
-      animation: typewriter 4s steps(7) forwards;
+      background: white;
+      animation: typewriter 2s steps(9) forwards;
+    }
+    h2::after {
+      width: 0.125em;
+      background: black;
+      animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
     }
 
     @keyframes typewriter {
       to {
         left: 100%;
+      }
+    }
+    @keyframes blinky {
+      to {
+        background: transparent;
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }
@@ -134,9 +159,9 @@
   animation: moveWave2 5s linear infinite;
 }
 
-@media all and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    color: blue;
-  }
-}
+// @media all and (max-width: 900px) {
+//   p {
+//     font-size: 1rem;
+//     color: blue;
+//   }
+// }

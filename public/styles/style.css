@@ -54,15 +54,23 @@
 .homeContainer .whiteSpace {
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
 }
 .homeContainer .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 8vw;
+  opacity: 0;
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 .homeContainer .whiteSpace h2 {
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
+  letter-spacing: 1rem;
 }
 .homeContainer .whiteSpace h2::before,
 .homeContainer .whiteSpace h2::after {
@@ -74,12 +82,28 @@
   left: 0;
 }
 .homeContainer .whiteSpace h2::before {
-  background: teal;
-  animation: typewriter 4s steps(7) forwards;
+  background: white;
+  animation: typewriter 2s steps(9) forwards;
+}
+.homeContainer .whiteSpace h2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
 }
 @keyframes typewriter {
   to {
     left: 100%;
+  }
+}
+@keyframes blinky {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .homeContainer .waveContainer {
@@ -99,12 +123,6 @@
   animation: moveWave2 5s linear infinite;
 }
 
-@media all and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    color: blue;
-  }
-}
 .homeContainer {
   height: 100%;
   background-color: white;
@@ -116,17 +134,25 @@
 .homeContainer .whiteSpace {
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
 }
 
 .homeContainer .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 8vw;
+  opacity: 0;
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 
 .homeContainer .whiteSpace h2 {
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
+  letter-spacing: 1rem;
 }
 
 .homeContainer .whiteSpace h2::before,
@@ -140,13 +166,30 @@
 }
 
 .homeContainer .whiteSpace h2::before {
-  background: teal;
-  animation: typewriter 4s steps(7) forwards;
+  background: white;
+  animation: typewriter 2s steps(9) forwards;
+}
+
+.homeContainer .whiteSpace h2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
 }
 
 @keyframes typewriter {
   to {
     left: 100%;
+  }
+}
+@keyframes blinky {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .homeContainer .waveContainer {
@@ -168,12 +211,6 @@
   animation: moveWave2 5s linear infinite;
 }
 
-@media all and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    color: blue;
-  }
-}
 div .projectsSection {
   height: 100%;
   background-color: #e7e7e7;
@@ -270,17 +307,25 @@ div .projectText {
 .homeContainer .whiteSpace {
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
 }
 
 .homeContainer .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 8vw;
+  opacity: 0;
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 
 .homeContainer .whiteSpace h2 {
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
+  letter-spacing: 1rem;
 }
 
 .homeContainer .whiteSpace h2::before,
@@ -294,13 +339,30 @@ div .projectText {
 }
 
 .homeContainer .whiteSpace h2::before {
-  background: teal;
-  animation: typewriter 4s steps(7) forwards;
+  background: white;
+  animation: typewriter 2s steps(9) forwards;
+}
+
+.homeContainer .whiteSpace h2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
 }
 
 @keyframes typewriter {
   to {
     left: 100%;
+  }
+}
+@keyframes blinky {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .homeContainer .waveContainer {
@@ -322,12 +384,6 @@ div .projectText {
   animation: moveWave2 5s linear infinite;
 }
 
-@media all and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    color: blue;
-  }
-}
 div.technologiesSection {
   height: 100%;
   width: 100vw;
@@ -387,17 +443,25 @@ div.technologiesSection .column4 {
 .homeContainer .whiteSpace {
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
 }
 
 .homeContainer .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 8vw;
+  opacity: 0;
+  transform: translateY(-3rem);
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
 }
 
 .homeContainer .whiteSpace h2 {
+  font-family: "Josefin Sans", sans-serif;
   position: relative;
+  letter-spacing: 1rem;
 }
 
 .homeContainer .whiteSpace h2::before,
@@ -411,13 +475,30 @@ div.technologiesSection .column4 {
 }
 
 .homeContainer .whiteSpace h2::before {
-  background: teal;
-  animation: typewriter 4s steps(7) forwards;
+  background: white;
+  animation: typewriter 2s steps(9) forwards;
+}
+
+.homeContainer .whiteSpace h2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
 }
 
 @keyframes typewriter {
   to {
     left: 100%;
+  }
+}
+@keyframes blinky {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .homeContainer .waveContainer {
@@ -439,12 +520,6 @@ div.technologiesSection .column4 {
   animation: moveWave2 5s linear infinite;
 }
 
-@media all and (max-width: 900px) {
-  h1 {
-    font-size: 2rem;
-    color: blue;
-  }
-}
 div.contactSection {
   height: 100vh;
   height: 100%;
@@ -512,6 +587,7 @@ img.portrait:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1.5fr;
+  height: 100vh;
 }
 .aboutMeContainer .topLeftGrid {
   grid-row: 1/2;
@@ -543,6 +619,7 @@ img.portrait:hover {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  text-align: center;
   background-color: #ffbc0a;
 }
 .aboutMeContainer .bottomRightGrid p {

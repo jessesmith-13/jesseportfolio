@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
       className='container aboutMeContainer'
     >
       <Fade
-        duration={3000}
+        duration={1000}
         left
       >
         <div className='topLeftGrid'>
@@ -30,7 +30,7 @@ export const AboutMe: React.FC = () => {
         </div>
       </Fade>
       <Fade
-        duration={3000}
+        duration={1000}
         left
       >
         <div className='bottomLeftGrid'>
@@ -47,7 +47,7 @@ export const AboutMe: React.FC = () => {
 
       <div className="topRightGrid">
         <Fade
-          duration={3000}
+          duration={1000}
           right
         >
           <h3 className="introText aboutHeading">ABOUT</h3>
@@ -55,7 +55,7 @@ export const AboutMe: React.FC = () => {
       </div>
       <div className="bottomRightGrid">
         <Fade
-        duration={2800}
+        duration={1000}
           right
         >
           <p>
