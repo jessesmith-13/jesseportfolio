@@ -1,7 +1,7 @@
 @import "./variables";
 
 @mixin section($color) {
-  height: 100%;
+  height: 100vh;
   background-color: $color;
 }
 
@@ -10,8 +10,6 @@ img.portrait {
   width: 200px;
   z-index: 1;
   border-radius: 50%;
-  // grid-column: 2;
-  // grid-row: 2/3;
   box-shadow: 5px 5px 20px $grullo;
   transition: all 0.2s ease-in-out;
   margin-bottom: 2%;
@@ -29,52 +27,80 @@ img.portrait {
   @include section(white);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1.5fr;
+  grid-template-rows: 1fr 3fr;
   height: 100vh;
-  // background-image: url("/stars.jpg");
-  // display: grid;
-  // position: relative;
-  // grid-template-columns: 1fr 1fr 4fr;
-  // grid-template-rows: repeat(4, 1fr);
-  .topLeftGrid {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    height: 100%;
+  overflow: hidden;
+  .left {
     display: flex;
+    transform: translateX(-15rem);
+    opacity: 0;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .topLeft {
+    grid-column: 1/2;
+    grid-row: 1/2;
     align-items: flex-end;
     justify-content: center;
   }
-  .bottomLeftGrid {
+  .bottomLeft {
+    grid-column: 1/2;
     grid-row: 2/3;
-    grid-column: 1/2;
-    height: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
   }
-  .topRightGrid {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    background-color: $accent1;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  .leftSideMove {
+    animation: leftSlideIn 5s ease forwards;
   }
-  .bottomRightGrid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    // max-width: 500px;
+  .right {
     background-color: $accent1;
     p {
       font-family: $mainText;
       font-size: 1.125em;
-      padding: 0 8em 0;
+      padding: 3rem 8rem 0;
       color: $background1;
       font-weight: 900;
+    }
+    p,
+    h3 {
+      transform: translateX(15rem);
+      opacity: 0;
+      margin-bottom: 0;
+    }
+    .rightSideMove {
+      animation: rightSlideIn 5s ease forwards;
+    }
+  }
+  .topRight {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .bottomRight {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @keyframes leftSlideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes rightSlideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
   .introText {
@@ -89,17 +115,8 @@ img.portrait {
     font-family: $mainText;
     font-size: 1.5em;
   }
-  // .portraitContainer {
-  //   display: flex;
-  //   align-items: center;
-  //   width: 50vw;
-  //   justify-content: space-around;
-  //   margin-bottom: 2%;
-  // }
   .iconContainer {
     width: 20vw;
-    // grid-row: 3/4;
-    // grid-column: 2/3;
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
@@ -113,43 +130,18 @@ img.portrait {
     opacity: 50%;
   }
 }
+.twitterIcon {
+  color: $accent2;
+}
+.linkedInIcon {
+  color: $accent1;
+}
+.githubIcon {
+  color: $mainDark;
+}
 
 .bodyText {
   font-family: $mainText;
 }
 @media (min-width: 900px) {
 }
-
-// div {
-//   .portraitBar {
-//     background-color: $cgBlue;
-//     // position: absolute;
-//     // top: 47.65%;
-//     // left: 30%;
-//     // height: 10%;
-//     // width: 75vw;
-//     height: 29%;
-//     width: 81vw;
-//     grid-column: 3/5;
-//     grid-row: 2/3;
-//     justify-self: center;
-//     align-self: flex-end;
-//     margin-bottom: 3.9%;
-//     display: flex;
-//     align-items: center;
-//     h3 {
-//       color: white;
-//       margin-left: 10%;
-//     }
-//   }
-
-//   .introContainer {
-//     grid-row: 2/3;
-//     grid-column: 3/4;
-//     align-self: center;
-//     margin: 0 0 2% 2%;
-//     .introText {
-//       font-weight: lighter;
-//     }
-//   }
-// }

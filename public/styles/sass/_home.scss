@@ -20,17 +20,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
     h1 {
       font-family: $mainText;
-      font-size: 8vw;
+      font-weight: 600;
+      font-size: max(4vw, 1.25rem);
+      color: $mainDark;
       opacity: 0;
       transform: translateY(-3rem);
-      opacity: 0;
       animation: fadeIn 2s ease forwards;
+      letter-spacing: 0.5rem;
     }
     h2 {
-      font-family: $heading;
+      font-family: $mainText;
+      font-weight: 100;
+      font-size: max(2.5vw, 1rem);
+      color: $mainDark;
       position: relative;
       // outline: 2px solid red;
       letter-spacing: 1rem;
@@ -87,81 +92,4 @@
       opacity: 50%;
     }
   }
-
-  // .wave {
-  //   height: 5vh;
-  //   width: 400%;
-  // }
-  // .greenWave {
-  //   animation: moveGreenWave 5s infinite;
-  // }
-  // .pinkWave {
-  //   animation: movePinkWave 5s infinite reverse;
-  // }
-  // .yellowWave {
-  //   animation: moveYellowWave 15s infinite;
-  // }
-  // .blueWave {
-  //   animation: moveBlueWave 10s infinite;
-  //   position: absolute;
-  // }
-  // @keyframes moveGreenWave {
-  //   0% {
-  //     transform: translateX(0) translateY(0);
-  //   }
-  //   50% {
-  //     transform: translateX(-50%) translateY(50%);
-  //   }
-  //   100% {
-  //     transform: translateX(0) translateY(0);
-  //   }
-  // }
-  // @keyframes movePinkWave {
-  //   0% {
-  //     transform: translateX(0);
-  //   }
-  //   50% {
-  //     transform: translateX(50%);
-  //   }
-  //   100% {
-  //     transform: translateX(0);
-  //   }
-  // }
-  // @keyframes moveYellowWave {
-  //   0% {
-  //     transform: translateX(0) translateY(0);
-  //   }
-  //   50% {
-  //     transform: translateX(-50%) translateY(50%) rotate(10deg);
-  //   }
-  //   100% {
-  //     transform: translateX(0) translateY(0);
-  //   }
-  // }
-  // @keyframes moveBlueWave {
-  //   0% {
-  //     transform: translateX(0) translateY(20%);
-  //   }
-  //   50% {
-  //     transform: translateX(50%);
-  //   }
-  //   100% {
-  //     transform: translateX(0);
-  //   }
-  // }
 }
-
-// .testWave1 {
-//   position: absolute;
-// }
-.testWave2 {
-  // width: 200%;
-  animation: moveWave2 5s linear infinite;
-}
-
-// @media all and (max-width: 900px) {
-//   p {
-//     font-size: 1rem;
-//     color: blue;
-//   }
-// }

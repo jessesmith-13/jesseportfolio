@@ -16,7 +16,7 @@ div.contactSection {
     // @include s.shadow;
     box-shadow: 5px 5px 20px black;
     background-color: white;
-    width: 50%;
+    width: min(500px, 65%);
     height: 55%;
     border-radius: 10px;
     display: flex;
@@ -42,8 +42,13 @@ div.contactSection {
         color: $accent1;
       }
       .githubIcon {
-        color: $accent2;
+        color: $mainDark;
       }
+    }
+  }
+  @media (max-width: 500px) {
+    .contactContainer {
+      height: 30%;
     }
   }
 }
