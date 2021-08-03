@@ -881,6 +881,7 @@ img.portrait:hover {
 .mainContainer {
   height: 92vh;
   overflow: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -895,7 +896,6 @@ body {
 
 @media (max-width: 600px) {
   .mainContainer {
-    overflow: auto;
     scroll-snap-type: none;
     scroll-behavior: auto;
   }
