@@ -44,14 +44,13 @@
   color: #fcbfb7;
 }
 
-.homeContainer {
-  height: 100%;
-  background-color: white;
+.homeSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.homeContainer .whiteSpace {
+.homeSection .whiteSpace {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -59,7 +58,7 @@
   align-items: center;
   padding-top: 7rem;
 }
-.homeContainer .whiteSpace h1 {
+.homeSection .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: max(4vw, 1.25rem);
@@ -69,7 +68,7 @@
   animation: fadeIn 2s ease forwards;
   letter-spacing: 0.5rem;
 }
-.homeContainer .whiteSpace h2 {
+.homeSection .whiteSpace h2 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 100;
   font-size: max(2.5vw, 1rem);
@@ -77,8 +76,8 @@
   position: relative;
   letter-spacing: 1rem;
 }
-.homeContainer .whiteSpace h2::before,
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::before,
+.homeSection .whiteSpace h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -86,11 +85,11 @@
   bottom: 0;
   left: 0;
 }
-.homeContainer .whiteSpace h2::before {
+.homeSection .whiteSpace h2::before {
   background: white;
   animation: typewriter 2s steps(9) forwards;
 }
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::after {
   width: 0.125em;
   background: black;
   animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
@@ -111,28 +110,32 @@
     transform: translateY(0);
   }
 }
-.homeContainer .waveContainer {
+.homeSection .waveContainer {
   height: 50vh;
   width: 100vw;
 }
-.homeContainer .waveContainer #wave {
+.homeSection .waveContainer #wave {
   height: 100%;
   right: 1000px;
 }
-.homeContainer .wave:hover {
+.homeSection .wave:hover {
   cursor: pointer;
   opacity: 50%;
 }
 
-.homeContainer {
-  height: 100%;
-  background-color: white;
+@media (max-width: 600px) {
+  .homeSection {
+    height: 92vh;
+  }
+}
+.homeSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.homeContainer .whiteSpace {
+.homeSection .whiteSpace {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -141,7 +144,7 @@
   padding-top: 7rem;
 }
 
-.homeContainer .whiteSpace h1 {
+.homeSection .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: max(4vw, 1.25rem);
@@ -152,7 +155,7 @@
   letter-spacing: 0.5rem;
 }
 
-.homeContainer .whiteSpace h2 {
+.homeSection .whiteSpace h2 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 100;
   font-size: max(2.5vw, 1rem);
@@ -161,8 +164,8 @@
   letter-spacing: 1rem;
 }
 
-.homeContainer .whiteSpace h2::before,
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::before,
+.homeSection .whiteSpace h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -171,12 +174,12 @@
   left: 0;
 }
 
-.homeContainer .whiteSpace h2::before {
+.homeSection .whiteSpace h2::before {
   background: white;
   animation: typewriter 2s steps(9) forwards;
 }
 
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::after {
   width: 0.125em;
   background: black;
   animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
@@ -198,21 +201,26 @@
     transform: translateY(0);
   }
 }
-.homeContainer .waveContainer {
+.homeSection .waveContainer {
   height: 50vh;
   width: 100vw;
 }
 
-.homeContainer .waveContainer #wave {
+.homeSection .waveContainer #wave {
   height: 100%;
   right: 1000px;
 }
 
-.homeContainer .wave:hover {
+.homeSection .wave:hover {
   cursor: pointer;
   opacity: 50%;
 }
 
+@media (max-width: 600px) {
+  .homeSection {
+    height: 92vh;
+  }
+}
 div .projectsSection {
   height: 100%;
   background-color: #e7e7e7;
@@ -222,7 +230,7 @@ div .projectsSection {
   height: 100%;
 }
 div .projectsSection .projectsHeading {
-  margin: 1% 0 3% 0;
+  margin: 3% 0 3% 0;
 }
 div .projectsContainer {
   height: 80%;
@@ -236,6 +244,35 @@ div .projectsContainer .projectBox {
   max-width: 400px;
   max-height: 200px;
   min-width: 200px;
+}
+div .projectsContainer .projectBox h3 {
+  border-bottom: 0.5px solid;
+  border-color: black;
+}
+div .projectsContainer .projectBox h3:hover {
+  border-color: #fcbfb7;
+}
+div .projectsContainer .projectBox p {
+  border-color: #fcbfb7;
+  margin-top: 4%;
+}
+div .projectsContainer .projectBox a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+div .projectsContainer .projectBox a h3 {
+  color: black;
+}
+div .projectsContainer .projectBox a h3:hover {
+  color: #fcbfb7;
+}
+div .projectsContainer .projectBox a .projectsGithubIcon {
+  color: #393e41;
+  margin: 0 0.5rem 0.4rem 0.5rem;
+}
+div .projectsContainer .projectBox a .projectsGithubIcon:hover {
+  color: #fcbfb7;
 }
 div .projectsContainer .projectImageContainer {
   background-color: white;
@@ -274,21 +311,24 @@ div .projectsContainer .project3Description {
   grid-column: 2/3;
   grid-row: 3/4;
 }
-div .projectsContainer .rightSideDescription {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 5% 5% 0 5%;
+div .projectsContainer .rightSideProjectDescription {
+  padding: 0 5% 0 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
-div .projectsContainer .leftSideDescription {
+div .projectsContainer .leftSideProjectDescription {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
   padding: 0 5% 5%;
   text-align: end;
+}
+div .projectsContainer .projectName {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
 }
 div .projectsContainer .project3Image {
   grid-column: 1/2;
@@ -297,16 +337,42 @@ div .projectsContainer .project3Image {
 div .projectText {
   font-size: 0.9em;
 }
+@media (max-width: 600px) {
+  div .projectsSection {
+    height: auto;
+    padding-top: 15%;
+  }
+  div .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div .projectsHeading {
+    margin-bottom: 10% !important;
+  }
+  div .projectImageContainer {
+    width: 80vw !important;
+    margin-bottom: 18%;
+  }
+  div .rightSideProjectDescription,
+div .leftSideProjectDescription {
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  div .projectBox {
+    width: 80vw;
+  }
+}
 
-.homeContainer {
-  height: 100%;
-  background-color: white;
+.homeSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.homeContainer .whiteSpace {
+.homeSection .whiteSpace {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -315,7 +381,7 @@ div .projectText {
   padding-top: 7rem;
 }
 
-.homeContainer .whiteSpace h1 {
+.homeSection .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: max(4vw, 1.25rem);
@@ -326,7 +392,7 @@ div .projectText {
   letter-spacing: 0.5rem;
 }
 
-.homeContainer .whiteSpace h2 {
+.homeSection .whiteSpace h2 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 100;
   font-size: max(2.5vw, 1rem);
@@ -335,8 +401,8 @@ div .projectText {
   letter-spacing: 1rem;
 }
 
-.homeContainer .whiteSpace h2::before,
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::before,
+.homeSection .whiteSpace h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -345,12 +411,12 @@ div .projectText {
   left: 0;
 }
 
-.homeContainer .whiteSpace h2::before {
+.homeSection .whiteSpace h2::before {
   background: white;
   animation: typewriter 2s steps(9) forwards;
 }
 
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::after {
   width: 0.125em;
   background: black;
   animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
@@ -372,21 +438,26 @@ div .projectText {
     transform: translateY(0);
   }
 }
-.homeContainer .waveContainer {
+.homeSection .waveContainer {
   height: 50vh;
   width: 100vw;
 }
 
-.homeContainer .waveContainer #wave {
+.homeSection .waveContainer #wave {
   height: 100%;
   right: 1000px;
 }
 
-.homeContainer .wave:hover {
+.homeSection .wave:hover {
   cursor: pointer;
   opacity: 50%;
 }
 
+@media (max-width: 600px) {
+  .homeSection {
+    height: 92vh;
+  }
+}
 div.technologiesSection {
   height: 100%;
   width: 100vw;
@@ -397,11 +468,11 @@ div.technologiesSection {
   background-color: #fcbfb7;
 }
 div.technologiesSection h2 {
-  margin-bottom: 6%;
+  margin-bottom: 5%;
   color: #393e41;
 }
 div.technologiesSection .technologiesContainer {
-  width: 80%;
+  width: min(800px, 80vw);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -409,18 +480,19 @@ div.technologiesSection .column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2em;
+  line-height: 2rem;
 }
 div.technologiesSection .column p {
   all: unset;
   font-family: "Titillium Web", sans-serif;
   color: #393e41;
-  font-size: 1.25em;
+  font-size: max(0.875rem, 1.75vw);
 }
 div.technologiesSection .column h3 {
   font-family: "Josefin Sans", sans-serif;
   color: #393e41;
-  font-size: 1.4em;
+  font-size: max(1rem, 1.75vw);
+  border-bottom: solid black 1px;
 }
 div.technologiesSection .column1 {
   grid-column: 1/2;
@@ -435,15 +507,36 @@ div.technologiesSection .column4 {
   grid-column: 4/5;
 }
 
-.homeContainer {
-  height: 100%;
-  background-color: white;
+@media (max-width: 600px) {
+  .technologiesSection {
+    height: auto !important;
+  }
+  .technologiesSection h2 {
+    margin-top: 25%;
+  }
+
+  .technologiesContainer {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .column {
+    line-height: 2rem !important;
+    margin-bottom: 15%;
+  }
+  .column p,
+.column h3 {
+    font-size: 1.5rem !important;
+  }
+}
+.homeSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.homeContainer .whiteSpace {
+.homeSection .whiteSpace {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -452,7 +545,7 @@ div.technologiesSection .column4 {
   padding-top: 7rem;
 }
 
-.homeContainer .whiteSpace h1 {
+.homeSection .whiteSpace h1 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: max(4vw, 1.25rem);
@@ -463,7 +556,7 @@ div.technologiesSection .column4 {
   letter-spacing: 0.5rem;
 }
 
-.homeContainer .whiteSpace h2 {
+.homeSection .whiteSpace h2 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 100;
   font-size: max(2.5vw, 1rem);
@@ -472,8 +565,8 @@ div.technologiesSection .column4 {
   letter-spacing: 1rem;
 }
 
-.homeContainer .whiteSpace h2::before,
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::before,
+.homeSection .whiteSpace h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -482,12 +575,12 @@ div.technologiesSection .column4 {
   left: 0;
 }
 
-.homeContainer .whiteSpace h2::before {
+.homeSection .whiteSpace h2::before {
   background: white;
   animation: typewriter 2s steps(9) forwards;
 }
 
-.homeContainer .whiteSpace h2::after {
+.homeSection .whiteSpace h2::after {
   width: 0.125em;
   background: black;
   animation: typewriter 2s steps(9) forwards, blinky 750ms steps(9) infinite;
@@ -509,21 +602,26 @@ div.technologiesSection .column4 {
     transform: translateY(0);
   }
 }
-.homeContainer .waveContainer {
+.homeSection .waveContainer {
   height: 50vh;
   width: 100vw;
 }
 
-.homeContainer .waveContainer #wave {
+.homeSection .waveContainer #wave {
   height: 100%;
   right: 1000px;
 }
 
-.homeContainer .wave:hover {
+.homeSection .wave:hover {
   cursor: pointer;
   opacity: 50%;
 }
 
+@media (max-width: 600px) {
+  .homeSection {
+    height: 92vh;
+  }
+}
 div.contactSection {
   height: 100vh;
   height: 100%;
@@ -536,15 +634,19 @@ div.contactSection {
 div.contactSection .contactContainer {
   box-shadow: 5px 5px 20px black;
   background-color: white;
-  width: min(500px, 65%);
+  width: 65%;
+  min-width: 300px;
+  max-width: 500px;
   height: 55%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3%;
 }
 div.contactSection .contactContainer .contactHeading {
   margin-top: 5%;
+  color: #393e41;
 }
 div.contactSection .contactContainer .iconContainer {
   height: 100%;
@@ -566,9 +668,16 @@ div.contactSection .contactContainer .iconContainer .linkedInIcon {
 div.contactSection .contactContainer .iconContainer .githubIcon {
   color: #393e41;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  div.contactSection .contactSection {
+    height: 92vh;
+  }
   div.contactSection .contactContainer {
     height: 30%;
+  }
+  div.contactSection .contactContainer .iconContainer {
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
@@ -601,7 +710,7 @@ img.portrait:hover {
 }
 .aboutMeContainer .left {
   display: flex;
-  transform: translateX(-15rem);
+  transform: translateX(-50%);
   opacity: 0;
 }
 .aboutMeContainer .left h3 {
@@ -626,17 +735,19 @@ img.portrait:hover {
 }
 .aboutMeContainer .right {
   background-color: #ffbc0a;
+  max-width: 50vw;
 }
 .aboutMeContainer .right p {
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.125em;
-  padding: 3rem 8rem 0;
+  font-size: max(1.4vw, 1rem);
+  padding-top: 3rem;
+  width: max(250px, 65%);
   color: #eaf7cf;
   font-weight: 900;
 }
 .aboutMeContainer .right p,
 .aboutMeContainer .right h3 {
-  transform: translateX(15rem);
+  transform: translateX(50%);
   opacity: 0;
   margin-bottom: 0;
 }
@@ -674,7 +785,7 @@ img.portrait:hover {
 }
 .aboutMeContainer .introText {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3em;
+  font-size: min(7vw, 3em);
   font-weight: 300;
 }
 .aboutMeContainer .aboutHeading {
@@ -682,13 +793,13 @@ img.portrait:hover {
 }
 .aboutMeContainer .introText2 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.5em;
+  font-size: min(3.5vw, 1.5em);
 }
 .aboutMeContainer .iconContainer {
-  width: 20vw;
+  width: max(20vw, 300px);
   display: flex;
   justify-content: space-around;
-  margin-top: 2%;
+  margin-top: max(30px, 6%);
 }
 
 .icon {
@@ -715,6 +826,60 @@ img.portrait:hover {
   font-family: "Titillium Web", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .aboutMeSection {
+    height: 92vh;
+  }
+
+  .aboutMeContainer {
+    grid-template-rows: 0.5fr 1fr 0.25fr 2fr;
+    grid-template-columns: none;
+  }
+
+  .topLeft {
+    grid-row: 1/2 !important;
+    grid-column: auto !important;
+  }
+
+  .bottomLeft {
+    grid-row: 2/3 !important;
+    grid-column: auto !important;
+    justify-content: center;
+    margin-bottom: 6%;
+  }
+
+  .right {
+    max-width: 100vw !important;
+  }
+
+  .topRight {
+    grid-row: 3/4 !important;
+    grid-column: auto !important;
+  }
+
+  .bottomRight {
+    grid-row: 4/5 !important;
+    grid-column: auto !important;
+  }
+
+  img.portrait {
+    height: 150px;
+    width: 150px;
+  }
+
+  .rightSideDescription {
+    padding: 3rem 1rem 0 !important;
+  }
+
+  .rightSideDescription,
+.topRight .aboutHeading {
+    transform: translateX(4rem);
+  }
+
+  .left {
+    transform: translateX(-4rem);
+  }
+}
 .mainContainer {
   height: 92vh;
   overflow: scroll;
@@ -730,6 +895,13 @@ body {
   overscroll-behavior-y: none;
 }
 
+@media (max-width: 600px) {
+  .mainContainer {
+    overflow: auto;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+}
 html,
 body {
   margin: 0;

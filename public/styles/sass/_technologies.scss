@@ -13,11 +13,11 @@ div.technologiesSection {
   @include flexCenter();
   background-color: $background2;
   h2 {
-    margin-bottom: 6%;
+    margin-bottom: 5%;
     color: $mainDark;
   }
   .technologiesContainer {
-    width: 80%;
+    width: min(800px, 80vw);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -26,17 +26,18 @@ div.technologiesSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 2em;
+    line-height: 2rem;
     p {
       all: unset;
       font-family: $mainText;
       color: $mainDark;
-      font-size: 1.25em;
+      font-size: max(0.875rem, 1.75vw);
     }
     h3 {
       font-family: $heading;
       color: $mainDark;
-      font-size: 1.4em;
+      font-size: max(1rem, 1.75vw);
+      border-bottom: solid black 1px;
     }
   }
 
@@ -54,5 +55,26 @@ div.technologiesSection {
 
   .column4 {
     grid-column: 4/5;
+  }
+}
+
+@media (max-width: 600px) {
+  .technologiesSection {
+    height: auto !important;
+    h2 {
+      margin-top: 25%;
+    }
+  }
+  .technologiesContainer {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .column {
+    line-height: 2rem !important;
+    margin-bottom: 15%;
+    p,
+    h3 {
+      font-size: 1.5rem !important;
+    }
   }
 }

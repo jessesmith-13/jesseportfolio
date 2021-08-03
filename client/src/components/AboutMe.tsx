@@ -47,10 +47,18 @@ export const AboutMe: React.FC = () => {
         <img src={img} className='portrait'  onClick={createRipple}></img>
         <h3 className='introText2'>FULL-STACK WEB DEVELOPER</h3>
         <div className="iconContainer">
-          <AiOutlineTwitter className='icon twitterIcon' size={30}/>
-          <AiFillLinkedin className='icon linkedInIcon' size={30}/>
-          <AiFillGithub className='icon githubIcon' size={30}/>
-          <FcDocument className='icon resumeIcon' size={30}/>
+          <a href="https://twitter.com/Holdenadream" target='_blank'>
+            <AiOutlineTwitter className='icon twitterIcon' size={30}/>
+          </a>
+          <a href="https://www.linkedin.com/in/jesselsmith713/" target='_blank'>
+            <AiFillLinkedin className='icon linkedInIcon' size={30}/>
+          </a>
+          <a href="https://github.com/jessesmith-13" target='_blank'>
+            <AiFillGithub className='icon githubIcon' size={30}/>
+          </a>
+          <a href="https://docs.google.com/document/d/19VLx5uw38sRb_2oMOzNH4953YtZZfzYcYuEze4-w4p4/edit?usp=sharing" target='_blank'>
+            <FcDocument className='icon resumeIcon' size={30}/>
+          </a>
         </div>
       </div>
 

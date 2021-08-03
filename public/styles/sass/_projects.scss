@@ -14,7 +14,7 @@ div {
     flex-direction: column;
     align-items: center;
     .projectsHeading {
-      margin: 1% 0 3% 0;
+      margin: 3% 0 3% 0;
     }
     height: 100%;
   }
@@ -29,6 +29,35 @@ div {
       max-width: 400px;
       max-height: 200px;
       min-width: 200px;
+      h3 {
+        border-bottom: 0.5px solid;
+        border-color: black;
+        &:hover {
+          border-color: $background2;
+        }
+      }
+      p {
+        border-color: $background2;
+        margin-top: 4%;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        h3 {
+          color: black;
+          &:hover {
+            color: $background2;
+          }
+        }
+        .projectsGithubIcon {
+          color: $mainDark;
+          margin: 0 0.5rem 0.4rem 0.5rem;
+          &:hover {
+            color: $background2;
+          }
+        }
+      }
     }
     .projectImageContainer {
       background-color: white;
@@ -89,22 +118,28 @@ div {
       grid-row: 3/4;
     }
 
-    .rightSideDescription {
-      @include descriptionFlex();
-      padding: 5% 5% 0 5%;
+    .rightSideProjectDescription {
+      // @include descriptionFlex();
+      padding: 0 5% 0 5%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: center;
     }
 
-    .leftSideDescription {
+    .leftSideProjectDescription {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      justify-content: center;
       padding: 0 5% 5%;
       text-align: end;
     }
 
+    .projectName {
+      font-family: $heading;
+      margin: 0;
+    }
     .project3Image {
       grid-column: 1/2;
       grid-row: 3/4;
@@ -112,5 +147,33 @@ div {
   }
   .projectText {
     font-size: 0.9em;
+  }
+  @media (max-width: 600px) {
+    .projectsSection {
+      height: auto;
+      padding-top: 15%;
+      // width: 400px;
+    }
+    .projectsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .projectsHeading {
+      margin-bottom: 10% !important;
+    }
+    .projectImageContainer {
+      width: 80vw !important;
+      margin-bottom: 18%;
+    }
+    .rightSideProjectDescription,
+    .leftSideProjectDescription {
+      align-items: center !important;
+      text-align: center !important;
+      padding: 0 !important;
+    }
+    .projectBox {
+      width: 80vw;
+    }
   }
 }

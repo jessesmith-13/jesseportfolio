@@ -11,8 +11,8 @@
   justify-content: flex-end;
 }
 
-.homeContainer {
-  @include section(white);
+.homeSection {
+  height: 100vh;
   @include circleFlex();
   .whiteSpace {
     height: 50vh;
@@ -91,5 +91,11 @@
       cursor: pointer;
       opacity: 50%;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .homeSection {
+    height: 92vh;
   }
 }

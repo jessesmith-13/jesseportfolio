@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
   return (
     <div 
       id='home' 
-      className='container homeContainer'
+      className='container homeSection'
     >
       <div className="whiteSpace">
         <h1 id='homeNavbarFocus'>{'<h1>JESSE SMITH</h1>'}</h1>

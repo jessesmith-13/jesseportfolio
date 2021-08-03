@@ -32,7 +32,7 @@ img.portrait {
   overflow: hidden;
   .left {
     display: flex;
-    transform: translateX(-15rem);
+    transform: translateX(-50%);
     opacity: 0;
     h3 {
       margin-bottom: 0;
@@ -57,16 +57,18 @@ img.portrait {
   }
   .right {
     background-color: $accent1;
+    max-width: 50vw;
     p {
       font-family: $mainText;
-      font-size: 1.125em;
-      padding: 3rem 8rem 0;
+      font-size: max(1.4vw, 1rem);
+      padding-top: 3rem;
+      width: max(250px, 65%);
       color: $background1;
       font-weight: 900;
     }
     p,
     h3 {
-      transform: translateX(15rem);
+      transform: translateX(50%);
       opacity: 0;
       margin-bottom: 0;
     }
@@ -105,7 +107,7 @@ img.portrait {
   }
   .introText {
     font-family: $heading;
-    font-size: 3em;
+    font-size: min(7vw, 3em);
     font-weight: 300;
   }
   .aboutHeading {
@@ -113,13 +115,13 @@ img.portrait {
   }
   .introText2 {
     font-family: $mainText;
-    font-size: 1.5em;
+    font-size: min(3.5vw, 1.5em);
   }
   .iconContainer {
-    width: 20vw;
+    width: max(20vw, 300px);
     display: flex;
     justify-content: space-around;
-    margin-top: 2%;
+    margin-top: max(30px, 6%);
   }
 }
 
@@ -143,5 +145,63 @@ img.portrait {
 .bodyText {
   font-family: $mainText;
 }
-@media (min-width: 900px) {
+@media (max-width: 600px) {
+  .aboutMeSection {
+    height: 92vh;
+  }
+  .aboutMeContainer {
+    grid-template-rows: 0.5fr 1fr 0.25fr 2fr;
+    grid-template-columns: none;
+  }
+  .topLeft {
+    grid-row: 1/2 !important;
+    grid-column: auto !important;
+  }
+  .bottomLeft {
+    grid-row: 2/3 !important;
+    grid-column: auto !important;
+    justify-content: center;
+    margin-bottom: 6%;
+  }
+  .right {
+    max-width: 100vw !important;
+  }
+  .topRight {
+    grid-row: 3/4 !important;
+    grid-column: auto !important;
+  }
+  .bottomRight {
+    grid-row: 4/5 !important;
+    grid-column: auto !important;
+  }
+  img.portrait {
+    height: 150px;
+    width: 150px;
+  }
+  .rightSideDescription {
+    padding: 3rem 1rem 0 !important;
+  }
+  .rightSideDescription,
+  .topRight .aboutHeading {
+    transform: translateX(4rem);
+  }
+  .left {
+    transform: translateX(-4rem);
+  }
 }
+
+// @media (max-width: 1000px) {
+//   .rightSideDescription {
+//     padding: 3rem 6em !important;
+//   }
+// }
+// @media (max-width: 850px) {
+//   .rightSideDescription {
+//     padding: 3rem 4em !important;
+//   }
+// }
+// @media (max-width: 700px) {
+//   .rightSideDescription {
+//     padding: 3rem 2em !important;
+//   }
+// }
