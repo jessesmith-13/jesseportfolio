@@ -37,7 +37,7 @@ module.exports = {
       }
     ],
   },
-  mode: 'development',
+  mode: 'production',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx']
   }
