@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server",
-    "build": "webpack -w --progress",
+    "build": "webpack",
     "postinstall": "npm run build",
     "watch-node": "nodemon server",
     "watch-ts": "tsc -w",
