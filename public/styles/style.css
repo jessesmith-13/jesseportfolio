@@ -880,7 +880,6 @@ img.portrait:hover {
   .topLeft {
     grid-row: 1/2 !important;
     grid-column: auto !important;
-    padding-top: 3%;
   }
 
   .bottomLeft {
