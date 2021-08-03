@@ -4,7 +4,7 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server",
+    "start": "node server",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
     "watch-node": "nodemon server",
