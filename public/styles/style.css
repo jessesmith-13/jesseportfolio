@@ -125,6 +125,10 @@
 }
 
 @media (max-width: 600px) {
+  .mainContainer {
+    height: 100vh;
+  }
+
   .waveContainer {
     height: 50% !important;
   }
@@ -219,6 +223,10 @@
 }
 
 @media (max-width: 600px) {
+  .mainContainer {
+    height: 100vh;
+  }
+
   .waveContainer {
     height: 50% !important;
   }
@@ -453,6 +461,10 @@ div .leftSideProjectDescription {
 }
 
 @media (max-width: 600px) {
+  .mainContainer {
+    height: 100vh;
+  }
+
   .waveContainer {
     height: 50% !important;
   }
@@ -619,6 +631,10 @@ div.technologiesSection .column4 {
 }
 
 @media (max-width: 600px) {
+  .mainContainer {
+    height: 100vh;
+  }
+
   .waveContainer {
     height: 50% !important;
   }
