@@ -18,7 +18,7 @@ div.contactSection {
     width: 65%;
     min-width: 300px;
     max-width: 500px;
-    height: 55%;
+    height: min(55%, 400px);
     border-radius: 10px;
     display: flex;
     flex-direction: column;

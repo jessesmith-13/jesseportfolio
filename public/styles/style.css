@@ -45,7 +45,8 @@
 }
 
 .homeSection {
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -111,12 +112,12 @@
   }
 }
 .homeSection .waveContainer {
-  height: 50vh;
+  height: auto;
   width: 100vw;
 }
 .homeSection .waveContainer #wave {
+  width: 100vw;
   height: 100%;
-  right: 1000px;
 }
 .homeSection .wave:hover {
   cursor: pointer;
@@ -129,7 +130,8 @@
   }
 }
 .homeSection {
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -202,13 +204,13 @@
   }
 }
 .homeSection .waveContainer {
-  height: 50vh;
+  height: auto;
   width: 100vw;
 }
 
 .homeSection .waveContainer #wave {
+  width: 100vw;
   height: 100%;
-  right: 1000px;
 }
 
 .homeSection .wave:hover {
@@ -362,7 +364,8 @@ div .leftSideProjectDescription {
 }
 
 .homeSection {
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -435,13 +438,13 @@ div .leftSideProjectDescription {
   }
 }
 .homeSection .waveContainer {
-  height: 50vh;
+  height: auto;
   width: 100vw;
 }
 
 .homeSection .waveContainer #wave {
+  width: 100vw;
   height: 100%;
-  right: 1000px;
 }
 
 .homeSection .wave:hover {
@@ -466,6 +469,7 @@ div.technologiesSection {
 div.technologiesSection h2 {
   margin-bottom: 5%;
   color: #393e41;
+  font-size: max(2em, 1vw);
 }
 div.technologiesSection .technologiesContainer {
   width: min(1000px, 80vw);
@@ -482,12 +486,12 @@ div.technologiesSection .column p {
   all: unset;
   font-family: "Titillium Web", sans-serif;
   color: #393e41;
-  font-size: max(1rem, 1.4vw);
+  font-size: max(1.3rem, 1.1vw);
 }
 div.technologiesSection .column h3 {
   font-family: "Josefin Sans", sans-serif;
   color: #393e41;
-  font-size: max(1rem, 1.35vw);
+  font-size: max(1.3rem, 1.35vw);
   border-bottom: solid black 1px;
 }
 div.technologiesSection .column1 {
@@ -526,7 +530,8 @@ div.technologiesSection .column4 {
   }
 }
 .homeSection {
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -599,13 +604,13 @@ div.technologiesSection .column4 {
   }
 }
 .homeSection .waveContainer {
-  height: 50vh;
+  height: auto;
   width: 100vw;
 }
 
 .homeSection .waveContainer #wave {
+  width: 100vw;
   height: 100%;
-  right: 1000px;
 }
 
 .homeSection .wave:hover {
@@ -633,7 +638,7 @@ div.contactSection .contactContainer {
   width: 65%;
   min-width: 300px;
   max-width: 500px;
-  height: 55%;
+  height: min(55%, 400px);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -701,7 +706,7 @@ img.portrait:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 3fr;
-  height: 100vh;
+  height: max(100vh, 850px);
   overflow: hidden;
 }
 .aboutMeContainer .left {
@@ -735,7 +740,7 @@ img.portrait:hover {
 }
 .aboutMeContainer .right p {
   font-family: "Titillium Web", sans-serif;
-  font-size: max(1.4vw, 1rem);
+  font-size: max(1.2vw, 1.1rem);
   padding-top: 3rem;
   width: max(250px, 65%);
   color: #eaf7cf;

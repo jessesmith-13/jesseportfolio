@@ -15,6 +15,7 @@ div.technologiesSection {
   h2 {
     margin-bottom: 5%;
     color: $mainDark;
+    font-size: max(2em, 1vw);
   }
   .technologiesContainer {
     width: min(1000px, 80vw);
@@ -31,12 +32,12 @@ div.technologiesSection {
       all: unset;
       font-family: $mainText;
       color: $mainDark;
-      font-size: max(1rem, 1.4vw);
+      font-size: max(1.3rem, 1.1vw);
     }
     h3 {
       font-family: $heading;
       color: $mainDark;
-      font-size: max(1rem, 1.35vw);
+      font-size: max(1.3rem, 1.35vw);
       border-bottom: solid black 1px;
     }
   }

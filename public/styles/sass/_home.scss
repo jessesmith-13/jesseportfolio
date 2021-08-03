@@ -12,7 +12,8 @@
 }
 
 .homeSection {
-  height: 100vh;
+  height: 100%;
+  overflow-y: hidden;
   @include circleFlex();
   .whiteSpace {
     height: 50vh;
@@ -76,11 +77,12 @@
     }
   }
   .waveContainer {
-    height: 50vh;
+    height: auto;
     width: 100vw;
     #wave {
+      // height: auto;
+      width: 100vw;
       height: 100%;
-      right: 1000px;
     }
   }
   .wave {

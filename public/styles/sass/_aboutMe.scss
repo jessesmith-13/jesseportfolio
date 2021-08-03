@@ -28,7 +28,7 @@ img.portrait {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 3fr;
-  height: 100vh;
+  height: max(100vh, 850px);
   overflow: hidden;
   .left {
     display: flex;
@@ -60,7 +60,7 @@ img.portrait {
     max-width: 50vw;
     p {
       font-family: $mainText;
-      font-size: max(1.4vw, 1rem);
+      font-size: max(1.2vw, 1.1rem);
       padding-top: 3rem;
       width: max(250px, 65%);
       color: $background1;
