@@ -156,30 +156,34 @@ img.portrait {
   .topLeft {
     grid-row: 1/2 !important;
     grid-column: auto !important;
+    padding-top: 3%;
   }
   .bottomLeft {
     grid-row: 2/3 !important;
     grid-column: auto !important;
     justify-content: center;
-    margin-bottom: 6%;
+    margin-bottom: 10%;
   }
   .right {
     max-width: 100vw !important;
+    padding: 0;
   }
   .topRight {
     grid-row: 3/4 !important;
     grid-column: auto !important;
+    padding-top: 3%;
   }
   .bottomRight {
     grid-row: 4/5 !important;
     grid-column: auto !important;
+    padding-bottom: 20%;
   }
   img.portrait {
     height: 150px;
     width: 150px;
   }
   .rightSideDescription {
-    padding: 3rem 1rem 0 !important;
+    padding: 1rem 1rem 0 !important;
   }
   .rightSideDescription,
   .topRight .aboutHeading {

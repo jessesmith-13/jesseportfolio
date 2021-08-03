@@ -26,17 +26,17 @@ div.technologiesSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 2rem;
+    line-height: 3.5vh;
     p {
       all: unset;
       font-family: $mainText;
       color: $mainDark;
-      font-size: max(0.875rem, 1.75vw);
+      font-size: max(1rem, 1.4vw);
     }
     h3 {
       font-family: $heading;
       color: $mainDark;
-      font-size: max(1rem, 1.75vw);
+      font-size: max(1rem, 1.35vw);
       border-bottom: solid black 1px;
     }
   }
