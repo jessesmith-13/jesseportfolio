@@ -125,8 +125,12 @@
 }
 
 @media (max-width: 600px) {
-  .homeSection {
+  .mainContainer {
     height: 100vh;
+  }
+
+  .homeSection {
+    height: 100%;
   }
 
   .waveContainer {
@@ -228,8 +232,12 @@
 }
 
 @media (max-width: 600px) {
-  .homeSection {
+  .mainContainer {
     height: 100vh;
+  }
+
+  .homeSection {
+    height: 100%;
   }
 
   .waveContainer {
@@ -471,8 +479,12 @@ div .leftSideProjectDescription {
 }
 
 @media (max-width: 600px) {
-  .homeSection {
+  .mainContainer {
     height: 100vh;
+  }
+
+  .homeSection {
+    height: 100%;
   }
 
   .waveContainer {
@@ -646,8 +658,12 @@ div.technologiesSection .column4 {
 }
 
 @media (max-width: 600px) {
-  .homeSection {
+  .mainContainer {
     height: 100vh;
+  }
+
+  .homeSection {
+    height: 100%;
   }
 
   .waveContainer {

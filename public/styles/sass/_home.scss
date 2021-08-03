@@ -94,8 +94,11 @@
 }
 
 @media (max-width: 600px) {
-  .homeSection {
+  .mainContainer {
     height: 100vh;
+  }
+  .homeSection {
+    height: 100%;
   }
   .waveContainer {
     height: 100% !important;
