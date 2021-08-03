@@ -351,3 +351,4 @@ MigrationBackup/
 
 #bundle
 bundle.js
+dist

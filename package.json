@@ -4,10 +4,10 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node dist/index.js",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
-    "watch-node": "nodemon server",
+    "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "scss": "sass --watch ./public/styles/sass:./public/styles"
