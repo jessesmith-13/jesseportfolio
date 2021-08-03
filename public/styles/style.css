@@ -234,11 +234,10 @@ div .projectsSection .projectsHeading {
 }
 div .projectsContainer {
   height: 80%;
-  width: 50%;
+  width: min(50%, 650px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  min-width: 600px;
 }
 div .projectsContainer .projectBox {
   max-width: 400px;
@@ -260,7 +259,6 @@ div .projectsContainer .projectBox a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: max(200px, 100%);
 }
 div .projectsContainer .projectBox a h3 {
   color: black;
@@ -470,7 +468,7 @@ div.technologiesSection h2 {
   color: #393e41;
 }
 div.technologiesSection .technologiesContainer {
-  width: min(800px, 80vw);
+  width: min(1000px, 80vw);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

@@ -17,7 +17,7 @@ div.technologiesSection {
     color: $mainDark;
   }
   .technologiesContainer {
-    width: min(800px, 80vw);
+    width: min(1000px, 80vw);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }

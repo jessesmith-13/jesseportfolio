@@ -20,11 +20,10 @@ div {
   }
   .projectsContainer {
     height: 80%;
-    width: 50%;
+    width: min(50%, 650px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    min-width: 600px;
     .projectBox {
       max-width: 400px;
       max-height: 200px;
@@ -44,7 +43,6 @@ div {
         text-decoration: none;
         display: flex;
         align-items: center;
-        height: max(200px, 100%);
         h3 {
           color: black;
           &:hover {
