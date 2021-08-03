@@ -44,6 +44,7 @@ div {
         text-decoration: none;
         display: flex;
         align-items: center;
+        height: max(200px, 100%);
         h3 {
           color: black;
           &:hover {

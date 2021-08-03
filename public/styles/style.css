@@ -260,6 +260,7 @@ div .projectsContainer .projectBox a {
   text-decoration: none;
   display: flex;
   align-items: center;
+  height: max(200px, 100%);
 }
 div .projectsContainer .projectBox a h3 {
   color: black;
