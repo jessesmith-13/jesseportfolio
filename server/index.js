@@ -4,7 +4,7 @@ const path = require('path');
 const morgan = require('morgan');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 
 app.use(express.json());
