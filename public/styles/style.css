@@ -134,6 +134,7 @@
   }
 
   #wave {
+    width: auto !important;
     height: 100% !important;
   }
 }
@@ -236,6 +237,7 @@
   }
 
   #wave {
+    width: auto !important;
     height: 100% !important;
   }
 }
@@ -478,6 +480,7 @@ div .leftSideProjectDescription {
   }
 
   #wave {
+    width: auto !important;
     height: 100% !important;
   }
 }
@@ -652,6 +655,7 @@ div.technologiesSection .column4 {
   }
 
   #wave {
+    width: auto !important;
     height: 100% !important;
   }
 }
