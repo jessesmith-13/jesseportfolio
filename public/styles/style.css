@@ -128,6 +128,15 @@
   .homeSection {
     height: 92vh;
   }
+
+  .waveContainer {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  #wave {
+    width: auto !important;
+  }
 }
 .homeSection {
   height: 100%;
@@ -221,6 +230,15 @@
 @media (max-width: 600px) {
   .homeSection {
     height: 92vh;
+  }
+
+  .waveContainer {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  #wave {
+    width: auto !important;
   }
 }
 div .projectsSection {
@@ -456,6 +474,15 @@ div .leftSideProjectDescription {
   .homeSection {
     height: 92vh;
   }
+
+  .waveContainer {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  #wave {
+    width: auto !important;
+  }
 }
 div.technologiesSection {
   height: 100%;
@@ -621,6 +648,15 @@ div.technologiesSection .column4 {
 @media (max-width: 600px) {
   .homeSection {
     height: 92vh;
+  }
+
+  .waveContainer {
+    height: 100% !important;
+    width: auto !important;
+  }
+
+  #wave {
+    width: auto !important;
   }
 }
 div.contactSection {
