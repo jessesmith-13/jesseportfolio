@@ -130,13 +130,13 @@
   }
 
   .waveContainer {
-    height: 50% !important;
+    height: 60vh !important;
     width: 100% !important;
   }
 
   #wave {
     width: auto !important;
-    height: 100% !important;
+    height: fit-content !important;
   }
 }
 .homeSection {
@@ -234,13 +234,13 @@
   }
 
   .waveContainer {
-    height: 50% !important;
+    height: 60vh !important;
     width: 100% !important;
   }
 
   #wave {
     width: auto !important;
-    height: 100% !important;
+    height: fit-content !important;
   }
 }
 div .projectsSection {
@@ -478,13 +478,13 @@ div .leftSideProjectDescription {
   }
 
   .waveContainer {
-    height: 50% !important;
+    height: 60vh !important;
     width: 100% !important;
   }
 
   #wave {
     width: auto !important;
-    height: 100% !important;
+    height: fit-content !important;
   }
 }
 div.technologiesSection {
@@ -654,13 +654,13 @@ div.technologiesSection .column4 {
   }
 
   .waveContainer {
-    height: 50% !important;
+    height: 60vh !important;
     width: 100% !important;
   }
 
   #wave {
     width: auto !important;
-    height: 100% !important;
+    height: fit-content !important;
   }
 }
 div.contactSection {

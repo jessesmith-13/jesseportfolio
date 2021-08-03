@@ -102,11 +102,11 @@
   //   }
   .waveContainer {
     //     height: 100% !important;
-    height: 50% !important;
+    height: 60vh !important;
     width: 100% !important;
   }
   #wave {
     width: auto !important;
-    height: 100% !important;
+    height: fit-content !important;
   }
 }
