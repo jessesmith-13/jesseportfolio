@@ -131,7 +131,7 @@
 
   .waveContainer {
     height: 50% !important;
-    width: auto !important;
+    width: 100% !important;
   }
 
   #wave {
@@ -235,7 +235,7 @@
 
   .waveContainer {
     height: 50% !important;
-    width: auto !important;
+    width: 100% !important;
   }
 
   #wave {
@@ -479,7 +479,7 @@ div .leftSideProjectDescription {
 
   .waveContainer {
     height: 50% !important;
-    width: auto !important;
+    width: 100% !important;
   }
 
   #wave {
@@ -655,7 +655,7 @@ div.technologiesSection .column4 {
 
   .waveContainer {
     height: 50% !important;
-    width: auto !important;
+    width: 100% !important;
   }
 
   #wave {
