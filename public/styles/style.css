@@ -126,18 +126,16 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh !important;
+    height: 92vh !important;
   }
 
   .waveContainer {
-    height: 60vh !important;
-    width: 100% !important;
-    padding-top: 11% !important;
+    height: 50% !important;
   }
 
   #wave {
     width: auto !important;
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 .homeSection {
@@ -231,18 +229,16 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh !important;
+    height: 92vh !important;
   }
 
   .waveContainer {
-    height: 60vh !important;
-    width: 100% !important;
-    padding-top: 11% !important;
+    height: 50% !important;
   }
 
   #wave {
     width: auto !important;
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div .projectsSection {
@@ -476,18 +472,16 @@ div .leftSideProjectDescription {
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh !important;
+    height: 92vh !important;
   }
 
   .waveContainer {
-    height: 60vh !important;
-    width: 100% !important;
-    padding-top: 11% !important;
+    height: 50% !important;
   }
 
   #wave {
     width: auto !important;
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div.technologiesSection {
@@ -653,18 +647,16 @@ div.technologiesSection .column4 {
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh !important;
+    height: 92vh !important;
   }
 
   .waveContainer {
-    height: 60vh !important;
-    width: 100% !important;
-    padding-top: 11% !important;
+    height: 50% !important;
   }
 
   #wave {
     width: auto !important;
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div.contactSection {
