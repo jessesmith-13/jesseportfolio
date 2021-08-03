@@ -1,6 +1,5 @@
 @use "./_home.scss" as home;
 @import "./variables";
-// @use "./_aboutMe.scss" as s;
 
 div.contactSection {
   height: 100vh;
@@ -14,7 +13,6 @@ div.contactSection {
       margin-top: 5%;
       color: $mainDark;
     }
-    // @include s.shadow;
     box-shadow: 5px 5px 20px black;
     background-color: white;
     width: 65%;
@@ -27,7 +25,6 @@ div.contactSection {
     align-items: center;
     padding-top: 3%;
     .iconContainer {
-      // justify-self: center;
       height: 100%;
       width: 75%;
       display: flex;

@@ -10,7 +10,7 @@ img.portrait {
   width: 200px;
   z-index: 1;
   border-radius: 50%;
-  box-shadow: 5px 5px 20px $grullo;
+  box-shadow: 5px 5px 20px $mainDark;
   transition: all 0.2s ease-in-out;
   margin-bottom: 2%;
   &:hover {
@@ -189,19 +189,3 @@ img.portrait {
     transform: translateX(-4rem);
   }
 }
-
-// @media (max-width: 1000px) {
-//   .rightSideDescription {
-//     padding: 3rem 6em !important;
-//   }
-// }
-// @media (max-width: 850px) {
-//   .rightSideDescription {
-//     padding: 3rem 4em !important;
-//   }
-// }
-// @media (max-width: 700px) {
-//   .rightSideDescription {
-//     padding: 3rem 2em !important;
-//   }
-// }

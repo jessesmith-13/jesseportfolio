@@ -296,9 +296,6 @@ div .projectsContainer .project1ImageContainer {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-div .projectsContainer .project2ImageContainer {
-  background-color: black;
-}
 div .projectsContainer .project1Description {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -686,7 +683,7 @@ img.portrait {
   width: 200px;
   z-index: 1;
   border-radius: 50%;
-  box-shadow: 5px 5px 20px #aba194;
+  box-shadow: 5px 5px 20px #393e41;
   transition: all 0.2s ease-in-out;
   margin-bottom: 2%;
 }

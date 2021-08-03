@@ -1,11 +1,8 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import img from '../assets/img/jesse.png';
-// import { AiOutlineTwitter } from 'react-icons/fa';
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FcDocument } from "react-icons/fc";
-// import { Fade } from 'react-reveal';
-// import { StickyContainer } from 'react-sticky';
 
 export const AboutMe: React.FC = () => {
   let audio = new Audio('/sample.mp3')
@@ -25,7 +22,6 @@ export const AboutMe: React.FC = () => {
         rightSideDescription.classList.add('rightSideMove');
         topLeft.classList.add('leftSideMove');
         bottomLeft.classList.add('leftSideMove');
-        console.log('INTERSECTING');
       }
     })
   })

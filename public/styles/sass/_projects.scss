@@ -63,15 +63,9 @@ div {
       background-color: white;
       height: 100%;
       width: 100%;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
       &:hover {
         cursor: pointer;
       }
-      // .projectImage {
-      //   max-height: 100%;
-      // }
       .project1Image {
         height: 100%;
         width: 100%;
@@ -86,21 +80,6 @@ div {
     .project1ImageContainer {
       grid-column: 1/2;
       grid-row: 1/2;
-    }
-
-    .project2ImageContainer {
-      // left: 50%;
-      // height: 100%;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      background-color: black;
-      // .project2Image {
-      //   // justify-self: center;
-      //   // align-self: center;
-      //   // margin-left: 25%;
-      //   // height: 20%;
-      // }
     }
 
     .project1Description {
@@ -119,7 +98,6 @@ div {
     }
 
     .rightSideProjectDescription {
-      // @include descriptionFlex();
       padding: 0 5% 0 5%;
       display: flex;
       flex-direction: column;
@@ -152,7 +130,6 @@ div {
     .projectsSection {
       height: auto;
       padding-top: 15%;
-      // width: 400px;
     }
     .projectsContainer {
       display: flex;
