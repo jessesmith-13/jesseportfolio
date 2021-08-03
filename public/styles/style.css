@@ -126,7 +126,7 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh;
+    height: 100vh !important;
   }
 
   .waveContainer {
@@ -224,7 +224,7 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh;
+    height: 100vh !important;
   }
 
   .waveContainer {
@@ -462,7 +462,7 @@ div .leftSideProjectDescription {
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh;
+    height: 100vh !important;
   }
 
   .waveContainer {
@@ -632,7 +632,7 @@ div.technologiesSection .column4 {
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh;
+    height: 100vh !important;
   }
 
   .waveContainer {

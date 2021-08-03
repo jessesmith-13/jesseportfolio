@@ -95,7 +95,7 @@
 
 @media (max-width: 600px) {
   .mainContainer {
-    height: 100vh;
+    height: 100vh !important;
   }
   //   .homeSection {
   //     height: 100%;
@@ -105,7 +105,7 @@
     height: 50% !important;
     //     width: auto !important;
   }
-  //   #wave {
-  //     width: auto !important;
-  //   }
+  // #wave {
+  // width: auto !important;
+  // }
 }
