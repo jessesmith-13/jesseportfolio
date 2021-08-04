@@ -140,7 +140,7 @@
   }
 
   #wave {
-    height: auto !important;
+    height: 100% !important;
   }
 }
 .homeSection {
@@ -248,7 +248,7 @@
   }
 
   #wave {
-    height: auto !important;
+    height: 100% !important;
   }
 }
 div .projectsSection {
@@ -496,7 +496,7 @@ div .leftSideProjectDescription {
   }
 
   #wave {
-    height: auto !important;
+    height: 100% !important;
   }
 }
 div.technologiesSection {
@@ -676,7 +676,7 @@ div.technologiesSection .column4 {
   }
 
   #wave {
-    height: auto !important;
+    height: 100% !important;
   }
 }
 div.contactSection {
