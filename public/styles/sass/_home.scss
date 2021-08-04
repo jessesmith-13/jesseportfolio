@@ -97,9 +97,10 @@
   .mainContainer {
     height: 92vh !important;
   }
-  //   .homeSection {
-  //     height: 100%;
-  //   }
+  .homeSection {
+    width: 100vw;
+    overflow-x: hidden;
+  }
   .whiteSpace {
     height: 60% !important;
     padding-top: 6rem !important;

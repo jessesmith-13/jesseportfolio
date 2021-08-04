@@ -129,6 +129,11 @@
     height: 92vh !important;
   }
 
+  .homeSection {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .whiteSpace {
     height: 60% !important;
     padding-top: 6rem !important;
@@ -238,6 +243,11 @@
 @media (max-width: 600px) {
   .mainContainer {
     height: 92vh !important;
+  }
+
+  .homeSection {
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .whiteSpace {
@@ -491,6 +501,11 @@ div .leftSideProjectDescription {
     height: 92vh !important;
   }
 
+  .homeSection {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .whiteSpace {
     height: 60% !important;
     padding-top: 6rem !important;
@@ -672,6 +687,11 @@ div.technologiesSection .column4 {
 @media (max-width: 600px) {
   .mainContainer {
     height: 92vh !important;
+  }
+
+  .homeSection {
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .whiteSpace {
