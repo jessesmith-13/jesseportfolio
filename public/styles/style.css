@@ -52,7 +52,7 @@
   justify-content: flex-end;
 }
 .homeSection .whiteSpace {
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +147,7 @@
 }
 
 .homeSection .whiteSpace {
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,7 +390,7 @@ div .leftSideProjectDescription {
 }
 
 .homeSection .whiteSpace {
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -565,7 +565,7 @@ div.technologiesSection .column4 {
 }
 
 .homeSection .whiteSpace {
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
