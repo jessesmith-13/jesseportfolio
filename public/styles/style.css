@@ -141,9 +141,10 @@
 
   .waveContainer {
     width: 250vw !important;
-    height: 425vh !important;
+    height: 200vh !important;
     display: flex;
     align-items: flex-end;
+    overflow-y: hidden;
   }
 
   #wave {
@@ -257,9 +258,10 @@
 
   .waveContainer {
     width: 250vw !important;
-    height: 425vh !important;
+    height: 200vh !important;
     display: flex;
     align-items: flex-end;
+    overflow-y: hidden;
   }
 
   #wave {
@@ -513,9 +515,10 @@ div .leftSideProjectDescription {
 
   .waveContainer {
     width: 250vw !important;
-    height: 425vh !important;
+    height: 200vh !important;
     display: flex;
     align-items: flex-end;
+    overflow-y: hidden;
   }
 
   #wave {
@@ -701,9 +704,10 @@ div.technologiesSection .column4 {
 
   .waveContainer {
     width: 250vw !important;
-    height: 425vh !important;
+    height: 200vh !important;
     display: flex;
     align-items: flex-end;
+    overflow-y: hidden;
   }
 
   #wave {

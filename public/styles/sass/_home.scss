@@ -107,10 +107,12 @@
   }
   .waveContainer {
     width: 250vw !important;
-    height: 425vh !important;
+    height: 200vh !important;
     // padding-bottom: 25%;
     display: flex;
     align-items: flex-end;
+    overflow-y: hidden;
+
     // height: 60vh !important;
     // width: 100% !important;
     // padding-top: 11% !important;
