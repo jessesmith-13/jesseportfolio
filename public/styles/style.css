@@ -141,7 +141,7 @@
   }
 
   #wave {
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 .homeSection {
@@ -250,7 +250,7 @@
   }
 
   #wave {
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div .projectsSection {
@@ -499,7 +499,7 @@ div .leftSideProjectDescription {
   }
 
   #wave {
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div.technologiesSection {
@@ -680,7 +680,7 @@ div.technologiesSection .column4 {
   }
 
   #wave {
-    height: fit-content !important;
+    height: 100% !important;
   }
 }
 div.contactSection {
