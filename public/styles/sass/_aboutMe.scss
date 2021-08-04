@@ -166,7 +166,7 @@ img.portrait {
   }
   .right {
     max-width: 100vw !important;
-    padding: 0;
+    // padding: 0;
   }
   .topRight {
     grid-row: 3/4 !important;
@@ -185,6 +185,7 @@ img.portrait {
   .rightSideDescription {
     padding: 1rem 1rem 0 !important;
     font-size: 1rem !important;
+    text-align: center !important;
   }
   .rightSideDescription,
   .topRight .aboutHeading {

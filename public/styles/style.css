@@ -923,7 +923,6 @@ img.portrait:hover {
 
   .right {
     max-width: 100vw !important;
-    padding: 0;
   }
 
   .topRight {
@@ -946,6 +945,7 @@ img.portrait:hover {
   .rightSideDescription {
     padding: 1rem 1rem 0 !important;
     font-size: 1rem !important;
+    text-align: center !important;
   }
 
   .rightSideDescription,
