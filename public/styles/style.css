@@ -130,7 +130,7 @@
   }
 
   .whiteSpace {
-    padding: 0;
+    padding-top: 0 !important;
   }
 
   .waveContainer {
@@ -239,7 +239,7 @@
   }
 
   .whiteSpace {
-    padding: 0;
+    padding-top: 0 !important;
   }
 
   .waveContainer {
@@ -488,7 +488,7 @@ div .leftSideProjectDescription {
   }
 
   .whiteSpace {
-    padding: 0;
+    padding-top: 0 !important;
   }
 
   .waveContainer {
@@ -669,7 +669,7 @@ div.technologiesSection .column4 {
   }
 
   .whiteSpace {
-    padding: 0;
+    padding-top: 0 !important;
   }
 
   .waveContainer {
