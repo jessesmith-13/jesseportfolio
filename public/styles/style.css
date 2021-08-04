@@ -130,12 +130,13 @@
   }
 
   .whiteSpace {
-    padding-top: 4rem !important;
+    height: 60% !important;
+    padding-top: 6rem !important;
   }
 
   .waveContainer {
-    width: 300vw !important;
-    height: 300vw !important;
+    width: 250vw !important;
+    height: 500vw !important;
     display: flex;
     align-items: flex-end;
   }
@@ -240,12 +241,13 @@
   }
 
   .whiteSpace {
-    padding-top: 4rem !important;
+    height: 60% !important;
+    padding-top: 6rem !important;
   }
 
   .waveContainer {
-    width: 300vw !important;
-    height: 300vw !important;
+    width: 250vw !important;
+    height: 500vw !important;
     display: flex;
     align-items: flex-end;
   }
@@ -490,12 +492,13 @@ div .leftSideProjectDescription {
   }
 
   .whiteSpace {
-    padding-top: 4rem !important;
+    height: 60% !important;
+    padding-top: 6rem !important;
   }
 
   .waveContainer {
-    width: 300vw !important;
-    height: 300vw !important;
+    width: 250vw !important;
+    height: 500vw !important;
     display: flex;
     align-items: flex-end;
   }
@@ -672,12 +675,13 @@ div.technologiesSection .column4 {
   }
 
   .whiteSpace {
-    padding-top: 4rem !important;
+    height: 60% !important;
+    padding-top: 6rem !important;
   }
 
   .waveContainer {
-    width: 300vw !important;
-    height: 300vw !important;
+    width: 250vw !important;
+    height: 500vw !important;
     display: flex;
     align-items: flex-end;
   }
