@@ -135,13 +135,13 @@
 
   .waveContainer {
     height: 50% !important;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     display: flex;
     align-items: flex-end;
   }
 
   #wave {
-    height: 100% !important;
+    height: 50% !important;
   }
 }
 .homeSection {
@@ -244,13 +244,13 @@
 
   .waveContainer {
     height: 50% !important;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     display: flex;
     align-items: flex-end;
   }
 
   #wave {
-    height: 100% !important;
+    height: 50% !important;
   }
 }
 div .projectsSection {
@@ -493,13 +493,13 @@ div .leftSideProjectDescription {
 
   .waveContainer {
     height: 50% !important;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     display: flex;
     align-items: flex-end;
   }
 
   #wave {
-    height: 100% !important;
+    height: 50% !important;
   }
 }
 div.technologiesSection {
@@ -674,13 +674,13 @@ div.technologiesSection .column4 {
 
   .waveContainer {
     height: 50% !important;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     display: flex;
     align-items: flex-end;
   }
 
   #wave {
-    height: 100% !important;
+    height: 50% !important;
   }
 }
 div.contactSection {
