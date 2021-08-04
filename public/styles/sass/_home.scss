@@ -100,8 +100,13 @@
   //   .homeSection {
   //     height: 100%;
   //   }
+  .whiteSpace {
+    padding: 0;
+  }
   .waveContainer {
     height: 50% !important;
+    display: flex;
+    align-items: flex-end;
     // height: 60vh !important;
     // width: 100% !important;
     // padding-top: 11% !important;

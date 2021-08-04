@@ -129,8 +129,14 @@
     height: 92vh !important;
   }
 
+  .whiteSpace {
+    padding: 0;
+  }
+
   .waveContainer {
     height: 50% !important;
+    display: flex;
+    align-items: flex-end;
   }
 
   #wave {
@@ -231,8 +237,14 @@
     height: 92vh !important;
   }
 
+  .whiteSpace {
+    padding: 0;
+  }
+
   .waveContainer {
     height: 50% !important;
+    display: flex;
+    align-items: flex-end;
   }
 
   #wave {
@@ -473,8 +485,14 @@ div .leftSideProjectDescription {
     height: 92vh !important;
   }
 
+  .whiteSpace {
+    padding: 0;
+  }
+
   .waveContainer {
     height: 50% !important;
+    display: flex;
+    align-items: flex-end;
   }
 
   #wave {
@@ -647,8 +665,14 @@ div.technologiesSection .column4 {
     height: 92vh !important;
   }
 
+  .whiteSpace {
+    padding: 0;
+  }
+
   .waveContainer {
     height: 50% !important;
+    display: flex;
+    align-items: flex-end;
   }
 
   #wave {
