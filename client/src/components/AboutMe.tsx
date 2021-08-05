@@ -5,11 +5,6 @@ import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FcDocument } from "react-icons/fc";
 
 export const AboutMe: React.FC = () => {
-  let audio = new Audio('/sample.mp3')
-
-  const createRipple = () => {
-    audio.play();
-  }
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -40,7 +35,7 @@ export const AboutMe: React.FC = () => {
         
       </div>
       <div className='left bottomLeft'>
-        <img src={img} className='portrait'  onClick={createRipple}></img>
+        <img src={img} className='portrait'></img>
         <h3 className='introText2'>FULL-STACK WEB DEVELOPER</h3>
         <div className="iconContainer">
           <a href="https://twitter.com/Holdenadream" target='_blank'>
