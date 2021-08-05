@@ -4,7 +4,6 @@ export const Header: React.FC = () => {
 
   const handleClick = (section: any) => {
     document.getElementById(section)!.scrollIntoView({ behavior: "smooth" });
-    console.log(section);
   }
 
   return (
