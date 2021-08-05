@@ -28,7 +28,6 @@ img.portrait {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 3fr;
-  height: max(100vh, 850px);
   overflow: hidden;
   .left {
     display: flex;
@@ -152,6 +151,7 @@ img.portrait {
   .aboutMeContainer {
     grid-template-rows: 0.5fr 1fr 0.25fr 2fr;
     grid-template-columns: none;
+    height: 800px;
   }
   .topLeft {
     grid-row: 1/2 !important;
