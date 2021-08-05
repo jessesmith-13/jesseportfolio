@@ -350,5 +350,5 @@ MigrationBackup/
 .ionide/
 
 #bundle
-bundle.js
+public/bundle.js
 dist
