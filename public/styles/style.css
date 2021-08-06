@@ -148,6 +148,16 @@
     width: 250vw !important;
   }
 }
+@media (max-width: 600px) and (max-height: 650px) {
+  .waveContainer {
+    width: 225vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 600px) {
+  .waveContainer {
+    width: 200vw !important;
+  }
+}
 .homeSection {
   height: 100%;
   overflow-y: hidden;
@@ -259,6 +269,16 @@
   #wave {
     height: 65% !important;
     width: 250vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 650px) {
+  .waveContainer {
+    width: 225vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 600px) {
+  .waveContainer {
+    width: 200vw !important;
   }
 }
 div .projectsSection {
@@ -514,6 +534,16 @@ div .leftSideProjectDescription {
     width: 250vw !important;
   }
 }
+@media (max-width: 600px) and (max-height: 650px) {
+  .waveContainer {
+    width: 225vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 600px) {
+  .waveContainer {
+    width: 200vw !important;
+  }
+}
 div.technologiesSection {
   height: 100%;
   width: 100vw;
@@ -697,6 +727,16 @@ div.technologiesSection .column4 {
   #wave {
     height: 65% !important;
     width: 250vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 650px) {
+  .waveContainer {
+    width: 225vw !important;
+  }
+}
+@media (max-width: 600px) and (max-height: 600px) {
+  .waveContainer {
+    width: 200vw !important;
   }
 }
 div.contactSection {
